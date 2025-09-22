@@ -1,8 +1,6 @@
-import React from 'react';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import React from 'react'
 
-const Polar = () => {
+const Mediaid = () => {
   return (
     <>
     <Navbar/>
@@ -13,14 +11,14 @@ const Polar = () => {
           RESEARCH ARTICLE | JUNE 01 2024
         </div>
         <h1 className="text-2xl md:text-3xl font-bold mb-2">
-          Polarization, Partisanship, and Health in the United States
+          Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism 
           <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded font-bold align-middle">FREE</span>
         </h1>
         <div className="text-blue-700 text-sm mb-2">
-          <a href="#" className="hover:underline">Jonathan Oberlander</a>
+          <a href="#" className="hover:underline">Michael K. Gusmano; Frank J. Thompson</a>
         </div>
         <div className="text-gray-700 text-sm mb-2">
-          J Health Polit Policy Law (2024) 49 (3): 329–350.
+          J Health Polit Policy Law (2025) 50 (5): 801–830.
         </div>
         <a
           href="https://doi.org/10.1215/03616878-11075609"
@@ -60,7 +58,7 @@ const Polar = () => {
         {/* Abstract Section */}
         <div className="bg-gray-50 border rounded p-6 mt-4">
           <div className="text-gray-800 text-base leading-relaxed">
-            Hyperpartisanship and polarization are defining features of contemporary American politics. According to an influential political science measure, Democrats and Republicans in Congress are now further apart ideologically, largely as a result of the GOP's rightward turn, than at any point in the past 150 years (McCarty <a href="#" className="text-blue-700 underline">2019</a>). Congressional Democrats and Republicans increasingly vote with large majorities of their own party against large majorities from the other party (Lee <a href="#" className="text-blue-700 underline">2015</a>; McCarty <a href="#" className="text-blue-700 underline">2019</a>). There are recurrent partisan battles over the federal budget and debt limit, while Democrats and Republicans frequently try to block each other's judicial nominees (Whittington <a href="#" className="text-blue-700 underline">2018</a>). In the Senate, the filibuster has become much more commonplace as a mechanism for the...
+           In the context of America's fragmented health insurance system, federal policy makers frequently turn to Medicaid to temporarily assist the blameless victims of societal crises. In this vein, the COVID pandemic triggered passage of major legislation that led Medicaid enrollments to soar. The end of the public health emergency presented the Biden administration and state Medicaid programs with the daunting task of implementing the “great unwinding”—redetermining eligibility for millions of enrollees. This article describes the core strategies the Biden administration employed to induce state implementing agents to minimize inappropriate Medicaid disenrollments during the unwinding. Preliminary data suggest great variation in state responses to the Biden strategic initiatives. On balance, however, the Biden administrative presidency appears to have made headway in nudging states toward more take-up–friendly renewal processes. The article also discusses the implications of the great unwinding for more general efforts to enhance Medicaid participation rates.
           </div>
         </div>
       </div>
@@ -84,7 +82,7 @@ const Polar = () => {
     </div>
     <Footer/>
     </>
-  );
-};
+  )
+}
 
-export default Polar;
+export default Mediaid

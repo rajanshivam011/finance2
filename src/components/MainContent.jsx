@@ -75,22 +75,22 @@ const MainContent = () => {
         <div className="bg-white rounded-lg shadow-xl p-6 border-t-8 border-[#503a56] w-72">
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">MOST READ</h2>
           <ul className="space-y-3 text-gray-800">
-            <li><Link to=''>Polarization, Partisanship, and Health in ihe United States</Link></li>
-            <li><Link to=""> What Is Wellness Now? </Link> </li>
+            <li className='cursor-pointer'><Link to='/polar'>Polarization, Partisanship, and Health in ihe United States</Link></li>
+            <li><Link to="/wellness"> What Is Wellness Now? </Link> </li>
             <li><Link to="/crisis"> It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns</Link></li>
             <li><Link to="/hos_con"> Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases </Link></li>
-            <li><Link to=""> Medicare at 60: A Popular Program Facing Challenges </Link></li>
+            <li><Link to="/mediaid"> Medicare at 60: A Popular Program Facing Challenges </Link></li>
           </ul>
         </div>
         {/* LATEST */}
         <div className="bg-white rounded-lg shadow-2xl p-6 border-t-8 border-[#503a56] w-72">
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">LATEST</h2>
           <ul className="space-y-3 text-gray-800">
-            <li><Link>Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism </Link></li>
+            <li><Link to="/mediaid">Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism </Link></li>
             <li><Link to="/hos_con">Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases</Link></li>
-            <li><Link>Analyzing Public Support for School-Based Mental Health Services</Link></li>
+            <li><Link to="">Analyzing Public Support for School-Based Mental Health Services</Link></li>
             <li><Link to="/crisis">It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns </Link></li>
-            <li><Link>Paid Leave for Personal and Family Illness: Impacts of State Policy Design on Coverage and Access by Race, Gender, and Education Level</Link></li>
+            <li><Link to="">Paid Leave for Personal and Family Illness: Impacts of State Policy Design on Coverage and Access by Race, Gender, and Education Level</Link></li>
           </ul>
         </div>
         {/* MOST CITED */}

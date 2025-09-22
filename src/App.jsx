@@ -15,6 +15,9 @@ import Covid_19 from './Pages/Covid_19'
 import Ethics from './Pages/Ethics'
 import EditorialBoard from './Pages/EditorialBoard'
 import Advertising from './Pages/Advertising'
+import Polar from './content/Polar'
+import WellNess from './content/WellNess'
+import Mediaid from './content/Mediaid'
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
         <Route path="/ethics" element={<Ethics/>}></Route>
         <Route path="/editorial_board" element={<EditorialBoard/>}></Route>
         <Route path="/advertising" element={<Advertising/>}></Route>
+        <Route path="/polar" element={<Polar/>}></Route>
+        <Route path="/wellness" element={<WellNess/>}></Route>
+        <Route path="/mediaid" element={<Mediaid/>}></Route>
       </Routes>
     </Router>
   )

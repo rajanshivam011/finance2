@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-const Polar = () => {
+const WellNess = () => {
   return (
     <>
     <Navbar/>
@@ -10,17 +10,17 @@ const Polar = () => {
       {/* Left: Article Content */}
       <div className="flex-1 px-8 py-8">
         <div className="text-xs text-gray-500 font-semibold mb-2 tracking-wide">
-          RESEARCH ARTICLE | JUNE 01 2024
+        Introduction| October 01 2014
         </div>
         <h1 className="text-2xl md:text-3xl font-bold mb-2">
-          Polarization, Partisanship, and Health in the United States
+         What Is Wellness Now?
           <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded font-bold align-middle">FREE</span>
         </h1>
         <div className="text-blue-700 text-sm mb-2">
-          <a href="#" className="hover:underline">Jonathan Oberlander</a>
+          <a href="#" className="hover:underline">Anna Kirkland</a>
         </div>
         <div className="text-gray-700 text-sm mb-2">
-          J Health Polit Policy Law (2024) 49 (3): 329–350.
+          J Health Polit Policy Law (2014) 39 (5): 957–970.
         </div>
         <a
           href="https://doi.org/10.1215/03616878-11075609"
@@ -60,8 +60,8 @@ const Polar = () => {
         {/* Abstract Section */}
         <div className="bg-gray-50 border rounded p-6 mt-4">
           <div className="text-gray-800 text-base leading-relaxed">
-            Hyperpartisanship and polarization are defining features of contemporary American politics. According to an influential political science measure, Democrats and Republicans in Congress are now further apart ideologically, largely as a result of the GOP's rightward turn, than at any point in the past 150 years (McCarty <a href="#" className="text-blue-700 underline">2019</a>). Congressional Democrats and Republicans increasingly vote with large majorities of their own party against large majorities from the other party (Lee <a href="#" className="text-blue-700 underline">2015</a>; McCarty <a href="#" className="text-blue-700 underline">2019</a>). There are recurrent partisan battles over the federal budget and debt limit, while Democrats and Republicans frequently try to block each other's judicial nominees (Whittington <a href="#" className="text-blue-700 underline">2018</a>). In the Senate, the filibuster has become much more commonplace as a mechanism for the...
-          </div>
+            Wellness is a popular buzzword these days. One finds wellness programs, wellness centers, wellness contests, wellness conferences, wellness journals, wellness administrators, wellness awards, wellness tourism, and even a Wellness brand cat and dog food (complete with its own blog and website asking, “What is true wellness?”). Like “intersectionality” in feminist scholarship (Davis 2008), the rise of “diversity” over affirmative action (Kelly and Dobbin 1998; Edelman, Fuller, and Mara-Drita 2001), “sustainability” in approaches to the natural world and its use and development (Scoones 2007), and “sexual health” in place of panic over sexually transmitted infections (Epstein and Mamo 2011), the hegemony of the buzzword wellness signals its usefulness for framing consensus in contemporary American society. That consensus is that health is more than just the absence of disease, that health promotion and prevention of disease should be a top governmental and personal priority, and that each individual can and should strive to achieve a state of optimal functioning. But in typical buzzword fashion, the appeal of the term comes from its ability to float above thorny and contested details and to mean different things to different stakeholders so that it becomes viewed as an uncontroverted good.
+            </div>
         </div>
       </div>
 
@@ -87,4 +87,4 @@ const Polar = () => {
   );
 };
 
-export default Polar;
+export default WellNess;
