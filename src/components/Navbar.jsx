@@ -120,13 +120,13 @@ const Navbar = () => {
         <h1 className="text-4xl font-bold tracking-tight mr-8 ml-5">
           Journal of Health Politics, Policy and Law
         </h1>
-        <a href="#" className="hover:underline">ISSUES</a>
+        <Link to="/viewallissue" className="hover:underline">ISSUES</Link>
         <div className="relative group" onClick={() => setfeatured(!featured)}>
           <button className="hover:underline cursor-pointer">FEATURED ▼</button>
           {featured && (
             <div className="absolute mt-5 bg-white text-black w-48 px-4">
-              <div className="cursor-pointer hover:underline mb-2">Advance Publications</div>
-              <div className="cursor-pointer hover:underline">Covid 19</div>
+              <div className="cursor-pointer hover:underline mb-2 " onClick={()=>{nav('/ap')}}>Advance Publications</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/covid_19')}}>Covid 19</div>
             </div>
           )}
         </div>
@@ -134,9 +134,9 @@ const Navbar = () => {
           <button className="hover:underline cursor-pointer">FOR AUTHORS ▼</button>
           {submission && (
             <div className="absolute mt-5 bg-white text-black w-54 px-4">
-              <div className="cursor-pointer hover:underline mb-2">Submission Guidelines</div>
+              <div className="cursor-pointer hover:underline mb-2" onClick={()=>{nav('/submission_guide')}}>Submission Guidelines</div>
               <div className="cursor-pointer hover:underline mb-2">Submit Article</div>
-              <div className="cursor-pointer hover:underline mb-2">Ethics and policies</div>
+              <div className="cursor-pointer hover:underline mb-2" onClick={()=>{nav("/ethics")}}>Ethics and policies</div>
             </div>
           )}
         </div>
@@ -147,8 +147,8 @@ const Navbar = () => {
           {aboutcontent && (
             <div className="absolute mt-5 bg-white text-black w-54 px-4">
               <div className="cursor-pointer hover:underline mb-2" onClick={()=>{nav('/about_journal')}}>About Journal of Health Politics, Policy and Law</div>
-              <div className="cursor-pointer hover:underline mb-2">Editorial Board</div>
-              <div className="cursor-pointer hover:underline mb-2">Advertising</div>
+              <div className="cursor-pointer hover:underline mb-2" onClick={()=>{nav('/editorial_board')}}>Editorial Board</div>
+              <div className="cursor-pointer hover:underline mb-2" onClick={()=>{nav('/advertising')}}>Advertising</div>
             </div>
           )}
         </div>

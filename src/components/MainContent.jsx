@@ -1,9 +1,10 @@
   import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Submission_GuideLlnes from '../Pages/Submission_GuideLlnes'
 import About_journal from '../Pages/About_journal'
 
 const MainContent = () => {
+    const nav=useNavigate();
   return (
     <>
     <div className="bg-gray-50 min-h-screen px-8 py-10">
@@ -34,7 +35,7 @@ const MainContent = () => {
               <div className="text-4xl font-light mb-6">
                 Volume 50, Issue 5, October 2025
               </div>
-              <button className="bg-[#3a5c9d] text-white px-6 py-2 rounded font-semibold mb-8">
+              <button className="bg-[#3a5c9d] text-white px-6 py-2 rounded font-semibold mb-8 cursor-pointer" onClick={()=>{nav('/viewallissue')}}>
                 VIEW THIS ISSUE
               </button>
             </div>
@@ -54,10 +55,10 @@ const MainContent = () => {
                   <Link to="/about_journal" className="text-blue-700 underline" element={<About_journal/>}>View more.</Link>
               </div>
               <div>
-                <a href="#" className="text-blue-700 underline">
+                <Link to="/covid_19" className="text-blue-700 underline">
                   Read scholarship from the journal on the COVID-19 global health crisis.
 
-                </a>
+                </Link>
               </div>
             </div>
             <div className="bg-white rounded-lg p-8 min-w-[220px] text-center shadow">
@@ -74,33 +75,33 @@ const MainContent = () => {
         <div className="bg-white rounded-lg shadow-xl p-6 border-t-8 border-[#503a56] w-72">
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">MOST READ</h2>
           <ul className="space-y-3 text-gray-800">
-            <li>Polarization, Partisanship, and Health in the United States</li>
-            <li>What Is Wellness Now?</li>
-            <li>It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns</li>
-            <li>Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases</li>
-            <li>Medicare at 60: A Popular Program Facing Challenges</li>
+            <li><Link to=''>Polarization, Partisanship, and Health in ihe United States</Link></li>
+            <li><Link to=""> What Is Wellness Now? </Link> </li>
+            <li><Link to="/crisis"> It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns</Link></li>
+            <li><Link to="/hos_con"> Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases </Link></li>
+            <li><Link to=""> Medicare at 60: A Popular Program Facing Challenges </Link></li>
           </ul>
         </div>
         {/* LATEST */}
         <div className="bg-white rounded-lg shadow-2xl p-6 border-t-8 border-[#503a56] w-72">
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">LATEST</h2>
           <ul className="space-y-3 text-gray-800">
-            <li>Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism</li>
-            <li>Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases</li>
-            <li>Analyzing Public Support for School-Based Mental Health Services</li>
-            <li>It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns</li>
-            <li>Paid Leave for Personal and Family Illness: Impacts of State Policy Design on Coverage and Access by Race, Gender, and Education Level</li>
+            <li><Link>Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism </Link></li>
+            <li><Link to="/hos_con">Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases</Link></li>
+            <li><Link>Analyzing Public Support for School-Based Mental Health Services</Link></li>
+            <li><Link to="/crisis">It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns </Link></li>
+            <li><Link>Paid Leave for Personal and Family Illness: Impacts of State Policy Design on Coverage and Access by Race, Gender, and Education Level</Link></li>
           </ul>
         </div>
         {/* MOST CITED */}
         <div className="bg-white rounded-lg shadow-2xl p-6 border-t-8 border-[#503a56] w-72">
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">MOST CITED</h2>
           <ul className="space-y-3 text-gray-800">
-            <li>Arrests of and Forced Interventions on Pregnant Women in the United States, 1973–2005: Implications for Women's Legal Status and Public Health</li>
-            <li>Pandemic Politics: Timing State-Level Social Distancing Responses to COVID-19</li>
-            <li>Weighing Both Sides: Morality, Mortality, and Framing Contests over Obesity</li>
-            <li>The Biological Concept of Race and Its Application to Public Health and Epidemiology</li>
-            <li>Lay Participation in Health Care Decision Making: A Conceptual Framework</li>
+            <li><Link>Arrests of and Forced Interventions on Pregnant Women in the United States, 1973–2005: Implications for Women's Legal Status and Public Health</Link></li>
+            <li><Link>Pandemic Politics: Timing State-Level Social Distancing Responses to COVID-19</Link></li>
+            <li><Link>Weighing Both Sides: Morality, Mortality, and Framing Contests over Obesity</Link></li>
+            <li><Link>The Biological Concept of Race and Its Application to Public Health and Epidemiology</Link></li>
+            <li><Link>Lay Participation in Health Care Decision Making: A Conceptual Framework</Link></li>
           </ul>
         </div>
         {/* SOCIAL MEDIA */}
