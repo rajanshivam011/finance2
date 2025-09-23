@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Mediaid = () => {
   return (
@@ -36,7 +38,7 @@ const Mediaid = () => {
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block"><rect x="3" y="5" width="12" height="8" rx="2" /></svg>
             Standard View
           </button>
-          <a className="flex items-center gap-1 px-3 py-2 bg-gray-50 border rounded text-sm font-medium hover:bg-gray-100 cursor-pointer" href="/pdf/polar.pdf" target="_blank" rel="noopener noreferrer">
+          <a className="flex items-center gap-1 px-3 py-2 bg-gray-50 border rounded text-sm font-medium hover:bg-gray-100 cursor-pointer" href="/pdf/mediaid.pdf" target="_blank" rel="noopener noreferrer">
             {/* Icon: PDF */}
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block"><rect x="4" y="3" width="10" height="12" rx="2" /><line x1="8" y1="7" x2="10" y2="7" /></svg>
             PDF

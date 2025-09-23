@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-const WellNess = () => {
+const Public_Support = () => {
   return (
     <>
     <Navbar/>
@@ -10,17 +10,17 @@ const WellNess = () => {
       {/* Left: Article Content */}
       <div className="flex-1 px-8 py-8">
         <div className="text-xs text-gray-500 font-semibold mb-2 tracking-wide">
-        Introduction| October 01 2014
+          RESEARCH ARTICLE | JUNE 01 2024
         </div>
         <h1 className="text-2xl md:text-3xl font-bold mb-2">
-         What Is Wellness Now?
+          Analyzing Public Support for School-Based Mental Health Services
           <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded font-bold align-middle">FREE</span>
         </h1>
         <div className="text-blue-700 text-sm mb-2">
-          <a href="#" className="hover:underline">Anna Kirkland</a>
+          <a href="#" className="hover:underline">Nicholas Hemauer; Seth Warner</a>
         </div>
         <div className="text-gray-700 text-sm mb-2">
-          J Health Polit Policy Law (2014) 39 (5): 957–970.
+          J Health Polit Policy Law (2025) 50 (5): 771–799.
         </div>
         <a
           href="https://doi.org/10.1215/03616878-11075609"
@@ -38,7 +38,7 @@ const WellNess = () => {
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block"><rect x="3" y="5" width="12" height="8" rx="2" /></svg>
             Standard View
           </button>
-          <a className="flex items-center gap-1 px-3 py-2 bg-gray-50 border rounded text-sm font-medium hover:bg-gray-100 cursor-pointer" onClick={() => window.open("/pdf/well.pdf", "_blank", "noopener,noreferrer")}>
+          <a className="flex items-center gap-1 px-3 py-2 bg-gray-50 border rounded text-sm font-medium hover:bg-gray-100 cursor-pointer" href="/pdf/ps.pdf" target="_blank" rel="noopener noreferrer">
             {/* Icon: PDF */}
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block"><rect x="4" y="3" width="10" height="12" rx="2" /><line x1="8" y1="7" x2="10" y2="7" /></svg>
             PDF
@@ -60,8 +60,14 @@ const WellNess = () => {
         {/* Abstract Section */}
         <div className="bg-gray-50 border rounded p-6 mt-4">
           <div className="text-gray-800 text-base leading-relaxed">
-            Wellness is a popular buzzword these days. One finds wellness programs, wellness centers, wellness contests, wellness conferences, wellness journals, wellness administrators, wellness awards, wellness tourism, and even a Wellness brand cat and dog food (complete with its own blog and website asking, “What is true wellness?”). Like “intersectionality” in feminist scholarship (Davis 2008), the rise of “diversity” over affirmative action (Kelly and Dobbin 1998; Edelman, Fuller, and Mara-Drita 2001), “sustainability” in approaches to the natural world and its use and development (Scoones 2007), and “sexual health” in place of panic over sexually transmitted infections (Epstein and Mamo 2011), the hegemony of the buzzword wellness signals its usefulness for framing consensus in contemporary American society. That consensus is that health is more than just the absence of disease, that health promotion and prevention of disease should be a top governmental and personal priority, and that each individual can and should strive to achieve a state of optimal functioning. But in typical buzzword fashion, the appeal of the term comes from its ability to float above thorny and contested details and to mean different things to different stakeholders so that it becomes viewed as an uncontroverted good.
-            </div>
+           Context: Public schools play a central role in addressing the mental health crisis among American youth, but most schools are limited in the services they provide. As of 2019, 44% of administrators cited concerns about the public's reaction as an obstacle to expanding these services.
+
+            Methods: The authors draw on observational data from three national surveys to study the individual-level characteristics that are associated with support for these programs. Then the authors use a conjoint experiment, which randomly varies the details of a proposal at a hypothetical school board meeting, to identify the programs, policies, and contexts that are most likely to gain the public's support.
+
+            Results: The authors find support for school mental health programs to be higher among women, racial minorities, younger people, and Democrats. The conjoint experiment results suggest that school mental health services receive more support when they are funded via state taxes as opposed to local taxes and when parental permission is required to participate.
+
+            Conclusions: The results offer guidance for policy makers, emphasizing high overall public support for school mental health services while highlighting key factors that may facilitate the implementation and acceptance of these services.
+        </div>
         </div>
       </div>
 
@@ -84,7 +90,7 @@ const WellNess = () => {
     </div>
     <Footer/>
     </>
-  );
-};
+  )
+}
 
-export default WellNess;
+export default Public_Support;

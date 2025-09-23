@@ -1,8 +1,8 @@
-import React from 'react';
-import Footer from '../components/Footer';
+import React from 'react'
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-const WellNess = () => {
+const Pain_gain= () => {
   return (
     <>
     <Navbar/>
@@ -10,17 +10,17 @@ const WellNess = () => {
       {/* Left: Article Content */}
       <div className="flex-1 px-8 py-8">
         <div className="text-xs text-gray-500 font-semibold mb-2 tracking-wide">
-        Introduction| October 01 2014
+          RESEARCH ARTICLE | JUNE 01 2024
         </div>
         <h1 className="text-2xl md:text-3xl font-bold mb-2">
-         What Is Wellness Now?
-          <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded font-bold align-middle">FREE</span>
+          Lots of Pain for Little Gain: Three Decades of Medicaid Estate Recovery
+        <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded font-bold align-middle">FREE</span>
         </h1>
         <div className="text-blue-700 text-sm mb-2">
-          <a href="#" className="hover:underline">Anna Kirkland</a>
+          <a href="#" className="hover:underline">Amanda Spishak-Thomas; Emma Sandoe; Heather Howard</a>
         </div>
         <div className="text-gray-700 text-sm mb-2">
-          J Health Polit Policy Law (2014) 39 (5): 957–970.
+          J  Health Polit Policy Law 12166749.
         </div>
         <a
           href="https://doi.org/10.1215/03616878-11075609"
@@ -38,7 +38,7 @@ const WellNess = () => {
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block"><rect x="3" y="5" width="12" height="8" rx="2" /></svg>
             Standard View
           </button>
-          <a className="flex items-center gap-1 px-3 py-2 bg-gray-50 border rounded text-sm font-medium hover:bg-gray-100 cursor-pointer" onClick={() => window.open("/pdf/well.pdf", "_blank", "noopener,noreferrer")}>
+          <a className="flex items-center gap-1 px-3 py-2 bg-gray-50 border rounded text-sm font-medium hover:bg-gray-100 cursor-pointer" onClick={() => window.open("/pdf/pain.pdf", "_blank", "noopener,noreferrer")}>
             {/* Icon: PDF */}
             <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" className="inline-block"><rect x="4" y="3" width="10" height="12" rx="2" /><line x1="8" y1="7" x2="10" y2="7" /></svg>
             PDF
@@ -60,8 +60,8 @@ const WellNess = () => {
         {/* Abstract Section */}
         <div className="bg-gray-50 border rounded p-6 mt-4">
           <div className="text-gray-800 text-base leading-relaxed">
-            Wellness is a popular buzzword these days. One finds wellness programs, wellness centers, wellness contests, wellness conferences, wellness journals, wellness administrators, wellness awards, wellness tourism, and even a Wellness brand cat and dog food (complete with its own blog and website asking, “What is true wellness?”). Like “intersectionality” in feminist scholarship (Davis 2008), the rise of “diversity” over affirmative action (Kelly and Dobbin 1998; Edelman, Fuller, and Mara-Drita 2001), “sustainability” in approaches to the natural world and its use and development (Scoones 2007), and “sexual health” in place of panic over sexually transmitted infections (Epstein and Mamo 2011), the hegemony of the buzzword wellness signals its usefulness for framing consensus in contemporary American society. That consensus is that health is more than just the absence of disease, that health promotion and prevention of disease should be a top governmental and personal priority, and that each individual can and should strive to achieve a state of optimal functioning. But in typical buzzword fashion, the appeal of the term comes from its ability to float above thorny and contested details and to mean different things to different stakeholders so that it becomes viewed as an uncontroverted good.
-            </div>
+           Since Congress enacted Medicaid estate recovery into law in 1993, there have been few changes to the policy and little research to investigate its effectiveness. Under Medicaid estate recovery – a response to the rising and uncertain costs associated with long-term custodial care among a rapidly aging American population – states have the right to track former Medicaid beneficiaries’ assets and seek recovery from their estate after their death. While it makes an insignificant dent in state budgets, Medicaid estate recovery nonetheless can have a lasting impact on the lives of families subject to its repayment requirements. For low-income families where homeownership is their primary source of wealth, policies aimed at homeowners may exacerbate longstanding disparities in wealth and disproportionately burden Black and Hispanic families. Recently, some states have initiated policy changes to address problems with Medicaid estate recovery and similar legislation also has been introduced in Congress. Such reforms, if more widely adopted, may improve the financial circumstances of surviving family members of deceased Medicaid beneficiaries.
+           </div>
         </div>
       </div>
 
@@ -84,7 +84,7 @@ const WellNess = () => {
     </div>
     <Footer/>
     </>
-  );
-};
+  )
+}
 
-export default WellNess;
+export default Pain_gain;
