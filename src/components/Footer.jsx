@@ -18,7 +18,7 @@ const Footer = () => {
           {/* Center links */}
           <div className="space-y-3">
             <Link to="https://www.facebook.com/JournalofHealthPoliticsPolicyandLaw" className="block hover:underline">Facebook</Link>
-            <Link to="#" className="block hover:underline">Purchase</Link>
+            {/* <Link to="#" className="block hover:underline">Purchase</Link> */}
             <Link to="/advertising" className="block hover:underline">Advertise</Link>
             <Link to="/content" className="block hover:underline">Rights and Permissions Inquiry</Link>
           </div>
