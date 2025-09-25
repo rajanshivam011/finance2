@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Left links */}
           <div className="space-y-3">
-            <a href="#" className="block hover:underline">About Journal of Health Politics, Policy and Law</a>
-            <a href="#" className="block hover:underline">Editorial Board</a>
+            <Link to="/about_journal" className="block hover:underline">About Journal of Health Politics, Policy and Law</Link>
+            <Link to="/editorial_board" className="block hover:underline">Editorial Board</Link>
             <a href="#" className="block hover:underline">For Authors</a>
             <a href="#" className="block hover:underline">Twitter</a>
           </div>
@@ -17,7 +18,7 @@ const Footer = () => {
           <div className="space-y-3">
             <a href="#" className="block hover:underline">Facebook</a>
             <a href="#" className="block hover:underline">Purchase</a>
-            <a href="#" className="block hover:underline">Advertise</a>
+            <Link to="/advertising" className="block hover:underline">Advertise</Link>
             <a href="#" className="block hover:underline">Rights and Permissions Inquiry</a>
           </div>
           {/* Journal title */}
@@ -47,13 +48,13 @@ const Footer = () => {
             <div className="mt-4 font-bold">International</div>
             <div>+1 (919) 688-5134</div>
             <div className="mt-4 font-bold">Contact</div>
-            <a href="#" className="hover:underline">Contact Us</a>
+            <Link to="/contact_us" className="hover:underline">Contact Us</Link>
           </div>
           {/* Information For */}
           <div>
             <div className="font-bold mb-2">Information For</div>
             <div className="space-y-1">
-              <a href="#" className="block hover:underline">Advertisers</a>
+              <Link to="/advertising" className="block hover:underline">Advertisers</Link>
               <a href="#" className="block hover:underline">Book Authors</a>
               <a href="#" className="block hover:underline">Booksellers/Media</a>
               <a href="#" className="block hover:underline">Customers</a>
@@ -96,11 +97,6 @@ const Footer = () => {
                 <span className="text-xl">📷</span>
               </a>
             </div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Duke_University_Press_logo.png"
-              alt="Duke University Press"
-              className="mt-4 w-48"
-            />
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-8 text-xs text-gray-300 flex flex-wrap justify-between items-center">

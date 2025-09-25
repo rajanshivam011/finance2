@@ -14,7 +14,7 @@ const articles = [
     free: true,
     abstract:
       "This article reviews the impact of Medicaid estate recovery over three decades, highlighting policy outcomes and challenges.",
-    links: [{ label: "Abstract" }, { label: "View article", url: "#" }],
+    links: [{ label: "Abstract" }, { label: "View article", url: "/pain_gain" }],
   },
   {
     type: "RESEARCH ARTICLE",
@@ -31,7 +31,7 @@ const articles = [
     free: true,
     abstract:
       "This article analyzes Section 1115 waivers for substance use disorders, discussing both opportunities and limitations.",
-    links: [{ label: "Abstract" }, { label: "View article", url: "#" }],
+    links: [{ label: "Abstract" }, { label: "View article", url: "/section115" }],
   },
   {
     type: "BOOK REVIEW",
@@ -41,7 +41,7 @@ const articles = [
     authors: ["Noémie Morize"],
     free: true,
     abstract: "",
-    links: [{ label: "View article", url: "#" }],
+    links: [{ label: "View article", url: "/affordable_care" }],
   },
   {
     type: "RESEARCH ARTICLE",
@@ -54,7 +54,7 @@ const articles = [
       "This article explores what types of information drive policy enthusiasm among older Americans regarding the ACA and Medicare.",
     links: [
       { label: "Abstract" },
-      { label: "View article", url: "#" },
+      { label: "View article", url: "/information_ethics" },
       { label: "Supplementary data", url: "#" },
     ],
   },
@@ -76,7 +76,7 @@ const articles = [
       "This article investigates how democracy, trust, and political orientation influence individuals’ attitudes toward vaccines.",
     links: [
       { label: "Abstract" },
-      { label: "View article", url: "#" },
+      { label: "View article", url: "/democracy" },
       { label: "Supplementary data", url: "#" },
     ],
   },

@@ -25,6 +25,15 @@ import Section115 from './content/Section115'
 import Affordable_Care from './content/Affordable_Care'
 import Information_Ethics from './content/Information_Ethics'
 import Democracy from './content/Democracy'
+import Contact_us from './components/Contact_us'
+import BookAuthor from './Pages/BookAuthor'
+import BookSeller from './Pages/BookSeller'
+import Librarians from './Pages/Librarians'
+import PJournals from './Pages/PJournals'
+import License from './Pages/License'
+import Society from './Pages/Society'
+import Book from './Pages/Book'
+import Advance_Search from './Pages/Advance_Search'
 
 function App() {
   return (
@@ -34,6 +43,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path="/contact_us" element={<Contact_us/>} />
         <Route path="/about_journal" element={<About_journal/>} />
         <Route path="/submission_guide" element={<Submission_GuideLlnes/>}></Route>
         <Route path="/viewallissue" element={<Viewallissue/>}></Route>
@@ -54,6 +64,14 @@ function App() {
         <Route path="/affordable_care" element={<Affordable_Care/>}></Route>
         <Route path="/information_ethics" element={<Information_Ethics/>}></Route>
         <Route path="/democracy" element={<Democracy/>}></Route>
+        <Route path="/bookauthor" element={<BookAuthor/>}></Route>
+        <Route path="/content" element={<BookSeller/>}></Route>
+        <Route path="/library" element={<Librarians/>}></Route>
+        <Route path="/pj" element={<PJournals/>}></Route>
+        <Route path="/license" element={<License/>}></Route>
+        <Route path="/society" element={<Society/>}></Route>
+        <Route path="/book" element={<Book/>}></Route>
+        <Route path="/advance_search" element={<Advance_Search/>}></Route>
       </Routes>
     </Router>
   )

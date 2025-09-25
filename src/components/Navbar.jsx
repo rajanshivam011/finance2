@@ -33,7 +33,7 @@ const SidebarMenu = ({ open, onClose }) => {
           </div>
           {booksOpen && (
             <div className="ml-4 mt-2 space-y-2">
-              <div className="cursor-pointer hover:underline">Books</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/book')}}>Books</div>
               <div className="cursor-pointer hover:underline">
                 Books by Subject
               </div>
@@ -58,7 +58,7 @@ const SidebarMenu = ({ open, onClose }) => {
                 Browse by Subject
               </div>
               <div className="cursor-pointer hover:underline">Reading Lists</div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/register')}}>
                 Sign up for Issue Alerts
               </div>
             </div>
@@ -79,24 +79,24 @@ const SidebarMenu = ({ open, onClose }) => {
           </div>
           {infoOpen && (
             <div className="ml-4 mt-2 space-y-2">
-              <div className="cursor-pointer hover:underline">Advertisers</div>
-              <div className="cursor-pointer hover:underline">Book Authors</div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/advertising')}}>Advertisers</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/bookauthor')}}>Book Authors</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/content')}}>
                 Booksellers/Media
               </div>
-              <div className="cursor-pointer hover:underline">Customers</div>
-              <div className="cursor-pointer hover:underline">Educators</div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/content')}}>Customers</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/content')}}>Educators</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/bookauthor')}}>
                 Journal Authors/Editors
               </div>
-              <div className="cursor-pointer hover:underline">Librarians</div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/library')}}>Librarians</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/pj')}}>
                 Prospective Journals
               </div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/license')}}>
                 Licensing and Subsidiary Rights
               </div>
-              <div className="cursor-pointer hover:underline">Societies</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/society')}}>Societies</div>
             </div>
           )}
         </div>
@@ -145,9 +145,9 @@ const Navbar = () => {
               search
             </span>
           </button>
-          <a href="#" className="ml-4 text-sm text-gray-700 hover:underline">
+          <Link to="/advance_search" className="ml-4 text-sm text-gray-700 hover:underline">
             Advanced Search
-          </a>
+          </Link>
         </div>
 
         {/* Register / Sign In (hidden on mobile) */}
@@ -180,7 +180,7 @@ const Navbar = () => {
 
         {/* FEATURED */}
         <div className="relative" onClick={() => setFeatured(!featured)}>
-          <button className="hover:underline">FEATURED ▼</button>
+          <button className="hover:underline cursor-pointer">FEATURED ▼</button>
           {featured && (
             <div className="absolute mt-2 bg-white text-black w-48 px-4 py-2 rounded shadow">
               <div
@@ -201,7 +201,7 @@ const Navbar = () => {
 
         {/* FOR AUTHORS */}
         <div className="relative" onClick={() => setSubmission(!submission)}>
-          <button className="hover:underline">FOR AUTHORS ▼</button>
+          <button className="hover:underline cursor-pointer">FOR AUTHORS ▼</button>
           {submission && (
             <div className="absolute mt-2 bg-white text-black w-56 px-4 py-2 rounded shadow">
               <div
@@ -223,13 +223,13 @@ const Navbar = () => {
           )}
         </div>
 
-        <a href="#" className="hover:underline">
+        <Link to="/login" className="hover:underline">
           ALERTS
-        </a>
+        </Link>
 
         {/* ABOUT */}
         <div className="relative" onClick={() => setAboutcontent(!aboutcontent)}>
-          <button className="hover:underline">ABOUT ▼</button>
+          <button className="hover:underline cursor-pointer">ABOUT ▼</button>
           {aboutcontent && (
             <div className="absolute mt-2 bg-white text-black w-64 px-4 py-2 rounded shadow">
               <div

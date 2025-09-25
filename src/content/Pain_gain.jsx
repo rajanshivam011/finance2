@@ -59,6 +59,7 @@ const Pain_gain= () => {
 
         {/* Abstract Section */}
         <div className="bg-gray-50 border rounded p-6 mt-4">
+          <h1 className='font-bold'>Abstract:</h1>
           <div className="text-gray-800 text-base leading-relaxed">
            Since Congress enacted Medicaid estate recovery into law in 1993, there have been few changes to the policy and little research to investigate its effectiveness. Under Medicaid estate recovery – a response to the rising and uncertain costs associated with long-term custodial care among a rapidly aging American population – states have the right to track former Medicaid beneficiaries’ assets and seek recovery from their estate after their death. While it makes an insignificant dent in state budgets, Medicaid estate recovery nonetheless can have a lasting impact on the lives of families subject to its repayment requirements. For low-income families where homeownership is their primary source of wealth, policies aimed at homeowners may exacerbate longstanding disparities in wealth and disproportionately burden Black and Hispanic families. Recently, some states have initiated policy changes to address problems with Medicaid estate recovery and similar legislation also has been introduced in Congress. Such reforms, if more widely adopted, may improve the financial circumstances of surviving family members of deceased Medicaid beneficiaries.
            </div>
