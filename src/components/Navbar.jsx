@@ -34,7 +34,7 @@ const SidebarMenu = ({ open, onClose }) => {
           {booksOpen && (
             <div className="ml-4 mt-2 space-y-2">
               <div className="cursor-pointer hover:underline" onClick={()=>{nav('/book')}}>Books</div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/advance_search')}}>
                 Books by Subject
               </div>
             </div>
@@ -50,14 +50,14 @@ const SidebarMenu = ({ open, onClose }) => {
           </div>
           {journalsOpen && (
             <div className="ml-4 mt-2 space-y-2">
-              <div className="cursor-pointer hover:underline">Journals</div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/book')}}>Journals</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/advance_search')}}>
                 Browse by Title
               </div>
-              <div className="cursor-pointer hover:underline">
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/advance_search')}}>
                 Browse by Subject
               </div>
-              <div className="cursor-pointer hover:underline">Reading Lists</div>
+              <div className="cursor-pointer hover:underline" onClick={()=>{nav('/readinglist')}}>Reading Lists</div>
               <div className="cursor-pointer hover:underline" onClick={()=>{nav('/register')}}>
                 Sign up for Issue Alerts
               </div>

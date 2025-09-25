@@ -34,6 +34,7 @@ import License from './Pages/License'
 import Society from './Pages/Society'
 import Book from './Pages/Book'
 import Advance_Search from './Pages/Advance_Search'
+import Reading_List from './Pages/Reading_List'
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         <Route path="/society" element={<Society/>}></Route>
         <Route path="/book" element={<Book/>}></Route>
         <Route path="/advance_search" element={<Advance_Search/>}></Route>
+        <Route path="/readinglist" element={<Reading_List/>}></Route>
       </Routes>
     </Router>
   )
