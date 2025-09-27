@@ -119,7 +119,7 @@ const Navbar = () => {
       <SidebarMenu open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
       {/* Top Navbar */}
-      <nav className="bg-gray-100 flex items-center justify-between px-6 py-2">
+      <nav className="bg-gray-100 flex items-center justify-between px-6 py-2" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
         {/* Logo */}
         <div
           className="flex items-center space-x-2 cursor-pointer"
@@ -170,7 +170,7 @@ const Navbar = () => {
       </nav>
 
       {/* Second Navbar (Desktop) */}
-      <nav className="hidden md:flex bg-[#503a56] text-purple-100 font-semibold px-10 py-8 space-x-8 items-center gap-5 ">
+      <nav className="hidden md:flex bg-[#503a56] text-purple-100 px-10 py-8 space-x-8 items-center gap-2" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
         <h1 className="text-4xl font-bold tracking-tight ml-12">
           Journal of Health Politics, Policy and Law
         </h1>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="mt-16">
+    <footer className="mt-16" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
       {/* Top purple section */}
       <div className="bg-[#6c5075] text-white px-6 py-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
 
           {/* Journal title */}
-          <div className="flex flex-col items-end justify-between">
+          <div className="flex flex-col items-end justify-between" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
             <div className="text-right font-bold text-2xl leading-snug">
               Journal of <br />
               Health Politics, <br />
