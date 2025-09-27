@@ -170,8 +170,8 @@ const Navbar = () => {
       </nav>
 
       {/* Second Navbar (Desktop) */}
-      <nav className="hidden md:flex bg-[#503a56] text-purple-100 font-semibold px-10 py-6 space-x-8 items-center gap-5">
-        <h1 className="text-2xl font-bold tracking-tight">
+      <nav className="hidden md:flex bg-[#503a56] text-purple-100 font-semibold px-10 py-8 space-x-8 items-center gap-5 ">
+        <h1 className="text-4xl font-bold tracking-tight ml-12">
           Journal of Health Politics, Policy and Law
         </h1>
         <Link to="/viewallissue" className="hover:underline">

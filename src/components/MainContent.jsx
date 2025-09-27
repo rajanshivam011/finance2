@@ -37,7 +37,7 @@ const MainContent = () => {
                   Volume 50, Issue 5, October 2025
                 </div>
                 <button
-                  className="bg-[#3a5c9d] text-white px-6 py-2 rounded font-semibold mb-8 cursor-pointer"
+                  className="bg-[#3a5c9d] hover:bg-[#2d477a] text-white px-6 py-2 rounded font-semibold mb-8 cursor-pointer "
                   onClick={() => {
                     nav("/viewallissue");
                   }}
@@ -49,7 +49,7 @@ const MainContent = () => {
           </div>
 
           {/* About Section */}
-          <div className="relative mt-10">
+          <div className="relative mt-2 ml-32">
             <div className="bg-gray-200 rounded-lg flex flex-col md:flex-row gap-8 items-start p-6 sm:p-8 md:p-12 max-w-full mx-auto md:-mt-24 md:ml-20 shadow z-20">
               <div className="flex-1 md:ml-20">
                 <div className="font-bold text-xl sm:text-2xl mb-2">
@@ -97,28 +97,28 @@ const MainContent = () => {
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">MOST READ</h2>
           <ul className="space-y-3 text-gray-800 text-sm sm:text-base">
             <li>
-              <Link to="/polar">
+              <Link to="/polar" className="hover:underline">
                 Polarization, Partisanship, and Health in the United States
               </Link>
             </li>
             <li>
-              <Link to="/wellness">What Is Wellness Now?</Link>
+              <Link to="/wellness" className="hover:underline">What Is Wellness Now?</Link>
             </li>
             <li>
-              <Link to="/crisis">
+              <Link to="/crisis" className="hover:underline">
                 It’s Only a Crisis if It’s Fit to Print: Examining the
                 Relationship Between Overdose Rates, News Coverage, and the
                 Presence of the Opioid Crisis in State Legislative Campaigns
               </Link>
             </li>
             <li>
-              <Link to="/hos_con">
+              <Link to="/hos_con" className="hover:underline">
                 Hospital Consolidation Across Geographic Markets: Insights from
                 Market Participants on Mechanisms for Price Increases
               </Link>
             </li>
             <li>
-              <Link to="/mediaid">
+              <Link to="/mediaid" className="hover:underline">
                 Medicare at 60: A Popular Program Facing Challenges
               </Link>
             </li>
@@ -130,31 +130,31 @@ const MainContent = () => {
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">LATEST</h2>
           <ul className="space-y-3 text-gray-800 text-sm sm:text-base">
             <li>
-              <Link to="/mediaid">
+              <Link to="/mediaid" className="hover:underline">
                 Medicaid and the Great Unwinding: The Administrative Presidency
                 Meets Federalism
               </Link>
             </li>
             <li>
-              <Link to="/hos_con">
+              <Link to="/hos_con" className="hover:underline">
                 Hospital Consolidation Across Geographic Markets: Insights from
                 Market Participants on Mechanisms for Price Increases
               </Link>
             </li>
             <li>
-              <Link to="/public_support">
+              <Link to="/public_support" className="hover:underline">
                 Analyzing Public Support for School-Based Mental Health Services
               </Link>
             </li>
             <li>
-              <Link to="/crisis">
+              <Link to="/crisis" className="hover:underline">
                 It’s Only a Crisis if It’s Fit to Print: Examining the
                 Relationship Between Overdose Rates, News Coverage, and the
                 Presence of the Opioid Crisis in State Legislative Campaigns
               </Link>
             </li>
             <li>
-              <Link to="/paid_leave">
+              <Link to="/paid_leave" className="hover:underline">
                 Paid Leave for Personal and Family Illness: Impacts of State
                 Policy Design on Coverage and Access by Race, Gender, and
                 Education Level
@@ -168,31 +168,31 @@ const MainContent = () => {
           <h2 className="font-bold text-xl mb-4 text-[#503a56]">MOST CITED</h2>
           <ul className="space-y-3 text-gray-800 text-sm sm:text-base">
             <li>
-              <Link>
+              <Link className="hover:underline">
                 Arrests of and Forced Interventions on Pregnant Women in the
                 United States, 1973–2005
               </Link>
             </li>
             <li>
-              <Link>
+              <Link className="hover:underline">
                 Pandemic Politics: Timing State-Level Social Distancing
                 Responses to COVID-19
               </Link>
             </li>
             <li>
-              <Link>
+              <Link className="hover:underline">
                 Weighing Both Sides: Morality, Mortality, and Framing Contests
                 over Obesity
               </Link>
             </li>
             <li>
-              <Link>
+              <Link className="hover:underline">
                 The Biological Concept of Race and Its Application to Public
                 Health and Epidemiology
               </Link>
             </li>
             <li>
-              <Link>
+              <Link className="hover:underline">
                 Lay Participation in Health Care Decision Making: A Conceptual
                 Framework
               </Link>
@@ -202,11 +202,12 @@ const MainContent = () => {
 
         {/* SOCIAL MEDIA */}
         <div className="bg-white rounded-lg shadow-xl p-6 border-t-8 border-[#503a56] flex flex-col">
+          <a href="https://bsky.app/profile/dukepress.bsky.social" target="_blank">
           <img
-            src="https://via.placeholder.com/300x80?text=Follow+this+journal+on+social+media"
+            src="/Social_media.png"
             alt="Social Media"
             className="mb-4 rounded"
-          />
+          /></a>
           <p className="mb-4 text-gray-800 text-sm sm:text-base">
             Stay connected and up to date with our latest news by following{" "}
             <span className="italic text-blue-700">
@@ -214,16 +215,16 @@ const MainContent = () => {
             </span>{" "}
             on Bluesky.
           </p>
-          <div className="flex space-x-3 mb-2">
+          {/* <div className="flex space-x-3 mb-2">
             <span className="text-gray-500 text-xl">🌐</span>
             <span className="text-gray-500 text-xl">📘</span>
             <span className="text-gray-500 text-xl">📺</span>
             <span className="text-gray-500 text-xl">📷</span>
             <span className="text-gray-500 text-xl">🦋</span>
-          </div>
-          <a href="#" className="text-blue-700 underline text-sm sm:text-base">
+          </div> */}
+          <Link to="/" className="text-blue-700 underline text-sm sm:text-base">
             Journal of Health Politics, Policy and Law on Bluesky.
-          </a>
+          </Link>
         </div>
       </div>
 
