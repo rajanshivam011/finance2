@@ -49,7 +49,7 @@ const MainContent = () => {
           </div>
 
           {/* About Section */}
-          <div className="relative mt-2 ml-32">
+     <div className="relative mt-2 md:ml-32">
             <div className="bg-gray-200 rounded-lg flex flex-col md:flex-row gap-8 items-start p-6 sm:p-8 md:p-12 max-w-full mx-auto md:-mt-24 md:ml-20 shadow z-20">
               <div className="flex-1 md:ml-20">
                 <div className="font-bold text-xl sm:text-2xl mb-2">
@@ -89,7 +89,6 @@ const MainContent = () => {
           </div>
         </div>
       </div>
-
       {/* MOST READ / LATEST / MOST CITED / SOCIAL MEDIA */}
       <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 lg:mx-16 justify-around">
         {/* MOST READ */}
