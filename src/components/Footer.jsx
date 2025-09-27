@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="bg-[#6c5075] text-white px-6 py-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo */}
-          <div className="flex items-start">
-            <img src="/Logo-1.svg" alt="Journal Logo" className="w-40" />
+          <div className="">
+            <img src="/Logo-1.svg" alt="Journal Logo" className="border-2 border-gray-400 inline-block p-4 bg-amber-100 rounded-xl"/>
           </div>
 
           {/* About / Links */}
