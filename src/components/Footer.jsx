@@ -1,59 +1,70 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaCloud  } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaCloud } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className="mt-16">
       {/* Top purple section */}
-      <div className="bg-[#6c5075] text-white px-8 py-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          {/* Left links */}
-          <div className="space-y-3">
+      <div className="bg-[#6c5075] text-white px-6 py-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo */}
+          <div className="flex items-start">
+            <img src="/Logo-1.svg" alt="Journal Logo" className="w-40" />
+          </div>
+
+          {/* About / Links */}
+          <div className="space-y-2 text-sm">
             <Link to="/about_journal" className="block hover:underline">About Journal of Health Politics, Policy and Law</Link>
             <Link to="/editorial_board" className="block hover:underline">Editorial Board</Link>
             <Link to="#" className="block hover:underline">For Authors</Link>
-            <Link to="https://x.com/JHPPL" className="block hover:underline">Twitter</Link>
+            <a href="https://x.com/JHPPL" target="_blank" rel="noopener noreferrer" className="block hover:underline">Twitter</a>
           </div>
-          {/* Center links */}
-          <div className="space-y-3">
-            <Link to="https://www.facebook.com/JournalofHealthPoliticsPolicyandLaw" className="block hover:underline">Facebook</Link>
-            {/* <Link to="#" className="block hover:underline">Purchase</Link> */}
+
+          {/* More Links */}
+          <div className="space-y-2 text-sm">
+            <a href="https://www.facebook.com/JournalofHealthPoliticsPolicyandLaw" target="_blank" rel="noopener noreferrer" className="block hover:underline">Facebook</a>
             <Link to="/advertising" className="block hover:underline">Advertise</Link>
             <Link to="/content" className="block hover:underline">Rights and Permissions Inquiry</Link>
           </div>
+
           {/* Journal title */}
-          <div className="flex flex-col items-end justify-between h-full">
-            <div className="text-right font-bold text-2xl leading-tight mb-2">
-              Journal of<br />
-              Health Politics,<br />
-              Policy<br />
+          <div className="flex flex-col items-end justify-between">
+            <div className="text-right font-bold text-2xl leading-snug">
+              Journal of <br />
+              Health Politics, <br />
+              Policy <br />
               and Law
             </div>
-            <div className="w-4 h-4 bg-purple-300 rounded-sm mt-2"></div>
+            <div className="w-4 h-4 bg-purple-300 rounded-sm mt-4"></div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-6 text-center text-sm">
+
+        {/* ISSN + Copyright */}
+        <div className="max-w-7xl mx-auto mt-6 text-center text-xs md:text-sm">
           Online ISSN 1527-1927 &nbsp; | &nbsp; Print ISSN 0361-6878 &nbsp; | &nbsp; Copyright © 2025 Duke University Press
         </div>
       </div>
+
       {/* Bottom black section */}
-      <div className="bg-black text-white px-8 py-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="bg-black text-white px-6 py-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+          
           {/* Address & Contact */}
           <div>
-            <div className="font-bold mb-2">Duke University Press</div>
-            <div>905 W. Main St. Ste. 18-B<br />Durham, NC 27701<br />USA</div>
-            <div className="mt-4 font-bold">Phone</div>
-            <div>(888) 651-0122</div>
-            <div className="mt-4 font-bold">International</div>
-            <div>+1 (919) 688-5134</div>
-            <div className="mt-4 font-bold">Contact</div>
+            <h3 className="font-bold mb-2">Duke University Press</h3>
+            <p>905 W. Main St. Ste. 18-B<br />Durham, NC 27701<br />USA</p>
+            <p className="mt-4 font-bold">Phone</p>
+            <p>(888) 651-0122</p>
+            <p className="mt-4 font-bold">International</p>
+            <p>+1 (919) 688-5134</p>
+            <p className="mt-4 font-bold">Contact</p>
             <Link to="/contact_us" className="hover:underline">Contact Us</Link>
           </div>
+
           {/* Information For */}
           <div>
-            <div className="font-bold mb-2">Information For</div>
+            <h3 className="font-bold mb-2">Information For</h3>
             <div className="space-y-1">
               <Link to="/advertising" className="block hover:underline">Advertisers</Link>
               <Link to="/bookauthor" className="block hover:underline">Book Authors</Link>
@@ -67,74 +78,50 @@ const Footer = () => {
               <Link to="/society" className="block hover:underline">Societies</Link>
             </div>
           </div>
+
           {/* Careers & Mailing List */}
           <div>
-            <div className="font-bold mb-2">Careers</div>
+            <h3 className="font-bold mb-2">Careers</h3>
             <a href="https://www.dukeupress.edu/Careers/" className="block mb-4 hover:underline">View Open Positions</a>
-            <button className="bg-[#a07bb7] text-white px-6 py-2 rounded w-full flex items-center justify-center mb-4">
-              <span className="mr-2" href="https://signup.e2ma.net/signup/2001912/21407/">📧</span> Join Our Mailing List
-            </button>
-            <button className="bg-[#a07bb7] text-white px-6 py-2 rounded w-full flex items-center justify-center">
-              <span className="mr-2" href="https://www.dukeupress.edu/Catalog/">📄</span> Current Catalog
-            </button>
+            <a
+              href="https://signup.e2ma.net/signup/2001912/21407/"
+              className="bg-[#a07bb7] text-white px-6 py-2 rounded w-full flex items-center justify-center mb-4"
+            >
+              📧 Join Our Mailing List
+            </a>
+            <a
+              href="https://www.dukeupress.edu/Catalog/"
+              className="bg-[#a07bb7] text-white px-6 py-2 rounded w-full flex items-center justify-center"
+            >
+              📄 Current Catalog
+            </a>
           </div>
-          {/* Connect & Logo */}
+
+          {/* Connect */}
           <div>
-            <div className="font-bold mb-2">Connect</div>
-           <div className="flex space-x-2 mb-4">
-      {/* Facebook */}
-      <a
-        href="https://www.facebook.com/DukeUniversityPress"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-black border border-white rounded p-2 flex items-center justify-center"
-      >
-        <FaFacebook className="text-xl text-white" />
-      </a>
-
-      {/* Bluesky */}
-      <a
-        href="https://bsky.app/profile/dukepress.bsky.social"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-black border border-white rounded p-2 flex items-center justify-center"
-      >
-        <FaCloud  className="text-xl text-white" />
-      </a>
-
-      {/* Twitter (X) */}
-      <a
-        href="https://x.com/DUKEpress"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-black border border-white rounded p-2 flex items-center justify-center"
-      >
-        <FaTwitter className="text-xl text-white" />
-      </a>
-
-      {/* YouTube */}
-      <a
-        href="https://www.youtube.com/user/DukeUPressPublicity"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-black border border-white rounded p-2 flex items-center justify-center"
-      >
-        <FaYoutube className="text-xl text-white" />
-      </a>
-
-      {/* Instagram */}
-      <a
-        href="https://www.instagram.com/dukeuniversitypress/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-black border border-white rounded p-2 flex items-center justify-center"
-      >
-        <FaInstagram className="text-xl text-white" />
-      </a>
-    </div>
+            <h3 className="font-bold mb-2">Connect</h3>
+            <div className="flex space-x-2">
+              <a href="https://www.facebook.com/DukeUniversityPress" target="_blank" rel="noopener noreferrer" className="p-2 border border-white rounded">
+                <FaFacebook className="text-xl" />
+              </a>
+              <a href="https://bsky.app/profile/dukepress.bsky.social" target="_blank" rel="noopener noreferrer" className="p-2 border border-white rounded">
+                <FaCloud className="text-xl" />
+              </a>
+              <a href="https://x.com/DUKEpress" target="_blank" rel="noopener noreferrer" className="p-2 border border-white rounded">
+                <FaTwitter className="text-xl" />
+              </a>
+              <a href="https://www.youtube.com/user/DukeUPressPublicity" target="_blank" rel="noopener noreferrer" className="p-2 border border-white rounded">
+                <FaYoutube className="text-xl" />
+              </a>
+              <a href="https://www.instagram.com/dukeuniversitypress/" target="_blank" rel="noopener noreferrer" className="p-2 border border-white rounded">
+                <FaInstagram className="text-xl" />
+              </a>
+            </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-8 text-xs text-gray-300 flex flex-wrap justify-between items-center">
+
+        {/* Bottom Bar */}
+        <div className="max-w-7xl mx-auto mt-8 text-xs text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4">
           <span>© 2025 Duke University Press. All Rights Reserved.</span>
           <div className="space-x-4">
             <a href="#" className="hover:underline">Accessibility</a>
