@@ -13,7 +13,7 @@ const MainContent = () => {
           <div className="flex flex-col md:flex-row gap-8 relative">
             {/* Journal Cover */}
             <div className="flex-shrink-0 z-10 flex justify-center md:justify-start">
-              <div className="w-64 sm:w-64 md:w-72 h-[380px] sm:h-[420px] bg-gradient-to-b from-[#503a56] to-purple-200 rounded flex flex-col justify-center items-center text-white font-bold text-lg sm:text-xl p-4 sm:p-6">
+              {/* <div className="w-64 sm:w-64 md:w-72 h-[380px] sm:h-[420px] bg-gradient-to-b from-[#301738] to-purple-300 rounded flex flex-col justify-center items-center text-white font-bold text-lg sm:text-lg p-4 sm:p-6">
                 <div className="mt-6 mb-24 sm:mb-32 text-right leading-snug ml-12">
                   Journal of <br />
                   Health Politics, <br />
@@ -26,7 +26,8 @@ const MainContent = () => {
                   October 2025
                 </div>
                 <div className="w-3 h-3 bg-purple-300 rounded-sm mt-2"></div>
-              </div>
+              </div> */}
+              <img src="/cover_img.png" className="w-64 sm:w-64 md:w-72"></img>
             </div>
 
             {/* Issue Info */}

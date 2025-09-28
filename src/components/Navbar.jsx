@@ -250,7 +250,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
+        
         {/* Mobile Hamburger */}
         <button
           className="md:hidden text-2xl"
@@ -258,30 +258,38 @@ const Navbar = () => {
         >
           {mobileOpen ? "✕" : "☰"}
         </button>
+        
       </nav>
-
-      {/* Second Navbar (Desktop) */}
-      <nav className="hidden md:flex bg-[#503a56] text-purple-100 px-10 py-8 space-x-8 items-center gap-2" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
-        <h1 className="text-4xl font-bold tracking-tight ml-12">
+        <div className="md:hidden bg-[#503a56] text-purple-100 px-6 py-6 text-left">
+        <h1
+          className="text-sm font-bold tracking-tight"
+          style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}
+        >
           Journal of Health Politics, Policy and Law
         </h1>
-        <Link to="/viewallissue" className="hover:underline">
+      </div>
+      {/* Second Navbar (Desktop) */}
+      <nav className="hidden md:flex bg-[#503a56] text-purple-100 px-10 py-8 space-x-8 items-center gap-2" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
+        <h1 className="text-4xl font-bold tracking-tight ml-12" style={{ fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
+          Journal of Health Politics, Policy and Law
+        </h1>
+        <Link to="/viewallissue" className="hover:underline text-sm">
           ISSUES
         </Link>
 
         {/* FEATURED */}
         <div className="relative" onClick={() => setFeatured(!featured)}>
-          <button className="hover:underline cursor-pointer">FEATURED ▼</button>
+          <button className="hover:underline cursor-pointer text-sm">FEATURED ▼</button>
           {featured && (
             <div className="absolute mt-2 bg-white text-black w-48 px-4 py-2 rounded shadow">
               <div
-                className="cursor-pointer hover:underline mb-2"
+                className="cursor-pointer hover:underline mb-2 text-sm"
                 onClick={() => nav("/ap")}
               >
                 Advance Publications
               </div>
               <div
-                className="cursor-pointer hover:underline"
+                className="cursor-pointer hover:underline text-sm"
                 onClick={() => nav("/covid_19")}
               >
                 Covid 19
@@ -291,8 +299,8 @@ const Navbar = () => {
         </div>
 
         {/* FOR AUTHORS */}
-        <div className="relative" onClick={() => setSubmission(!submission)}>
-          <button className="hover:underline cursor-pointer">FOR AUTHORS ▼</button>
+        <div className="relative text-sm" onClick={() => setSubmission(!submission)}>
+          <button className="hover:underline cursor-pointer text-sm">FOR AUTHORS ▼</button>
           {submission && (
             <div className="absolute mt-2 bg-white text-black w-56 px-4 py-2 rounded shadow">
               <div
@@ -314,13 +322,13 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link to="/login" className="hover:underline">
+        <Link to="/login" className="hover:underline text-sm">
           ALERTS
         </Link>
 
         {/* ABOUT */}
         <div className="relative" onClick={() => setAboutcontent(!aboutcontent)}>
-          <button className="hover:underline cursor-pointer">ABOUT ▼</button>
+          <button className="hover:underline cursor-pointer text-sm">ABOUT ▼</button>
           {aboutcontent && (
             <div className="absolute mt-2 bg-white text-black w-64 px-4 py-2 rounded shadow">
               <div
