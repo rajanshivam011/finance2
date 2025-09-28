@@ -13,14 +13,14 @@ const MainContent = () => {
           <div className="flex flex-col md:flex-row gap-8 relative">
             {/* Journal Cover */}
             <div className="flex-shrink-0 z-10 flex justify-center md:justify-start">
-              <div className="w-64 sm:w-72 md:w-80 h-[380px] sm:h-[420px] bg-gradient-to-b from-[#503a56] to-purple-200 rounded-lg flex flex-col justify-center items-center text-white font-bold text-lg sm:text-xl p-4 sm:p-6">
-                <div className="mt-10 mb-24 sm:mb-32 text-center leading-tight">
+              <div className="w-64 sm:w-64 md:w-72 h-[380px] sm:h-[420px] bg-gradient-to-b from-[#503a56] to-purple-200 rounded flex flex-col justify-center items-center text-white font-bold text-lg sm:text-xl p-4 sm:p-6">
+                <div className="mt-6 mb-24 sm:mb-32 text-right leading-snug ml-12">
                   Journal of <br />
                   Health Politics, <br />
                   Policy <br />
                   and Law
                 </div>
-                <div className="text-purple-200 text-xs mt-auto mb-6 text-left w-full pl-2">
+                <div className="text-black text-xs mt-auto mb-6 text-right w-full pl-2">
                   Volume 50 <br />
                   Number 5 <br />
                   October 2025
@@ -30,14 +30,14 @@ const MainContent = () => {
             </div>
 
             {/* Issue Info */}
-            <div className="flex-1 z-10 text-center md:text-left">
-              <div className="mt-4">
+            <div className="flex-1 z-10 text-left">
+              <div className="mt-4 justify-start">
                 <div className="font-semibold text-lg mb-2">Current Issue</div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-light mb-6">
+                <div className="text-4xl sm:text-3xl md:text-4xl font-light mb-6">
                   Volume 50, Issue 5, October 2025
                 </div>
                 <button
-                  className="bg-[#3a5c9d] hover:bg-[#2d477a] text-white px-6 py-2 rounded font-semibold mb-8 cursor-pointer "
+                  className="bg-[#5276ba] hover:bg-[#2d477a] text-white px-6 py-2 rounded font-semibold mb-8 cursor-pointer "
                   onClick={() => {
                     nav("/viewallissue");
                   }}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import { FiSearch, FiX } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
+import { FaRegCircleUser } from "react-icons/fa6";
 const SidebarMenu = ({ open, onClose }) => {
   const nav = useNavigate();
   const [booksOpen, setBooksOpen] = useState(false);
@@ -111,6 +113,9 @@ const Navbar = () => {
   const [submission, setSubmission] = useState(false);
   const [aboutcontent, setAboutcontent] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [openuser, setOpenuser] = useState(false);
+
   const nav = useNavigate();
 
   return (
@@ -128,37 +133,123 @@ const Navbar = () => {
           <img src="/logo.svg" alt="Duke University Press" className="h-8" /> ▼
         </div>
 
-        {/* Search (hidden on mobile) */}
+        {/* Desktop Search (visible on md and up) */}
         <div className="hidden md:flex items-center space-x-2 flex-1 mx-15">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="border border-gray-300 rounded px-3 py-1 w-64"
-          />
-          <select className="border border-gray-300 rounded px-2 py-1 bg-gray-50">
-            <option>Books & Journals</option>
-            <option>Journal of Health Politics, Policy and Law</option>
-            <option>Other Journal</option>
-          </select>
-          <button className="bg-blue-400 text-white px-3 py-1 rounded ml-2">
-            <span className="material-icons" style={{ fontSize: 18 }}>
-              search
-            </span>
-          </button>
-          <Link to="/advance_search" className="ml-4 text-sm text-gray-700 hover:underline">
-            Advanced Search
-          </Link>
+        <input
+          type="text"
+          placeholder="Search..."
+          className="border border-gray-300 rounded px-3 py-1 w-64"
+        />
+        <select className="border border-gray-300 rounded px-2 py-1 bg-gray-50">
+          <option>Books & Journals</option>
+          <option>Journal of Health Politics, Policy and Law</option>
+          <option>Other Journal</option>
+        </select>
+        <button className="bg-blue-400 text-white px-3 py-1 rounded ml-2">
+          <FiSearch size={18} />
+        </button>
+        <Link
+          to="/advance_search"
+          className="ml-4 text-sm text-gray-700 hover:underline"
+        >
+          Advanced Search
+        </Link>
+      </div>
+
+      {/* Mobile Search Icon */}
+      <div className="flex md:hidden items-center ml-2">
+        <button
+          className="text-gray-700"
+          onClick={() => setOpen(true)}
+        >
+          <FiSearch size={22} />
+        </button>
+      </div>
+
+      {/* Mobile Slide-in Search (Hamburger style) */}
+      {open && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex">
+          <div className="bg-white w-4/5 max-w-sm h-full p-4 shadow-lg">
+            {/* Close button */}
+            <button
+              className="text-gray-700 mb-4"
+              onClick={() => setOpen(false)}
+            >
+              <FiX size={24} />
+            </button>
+
+            {/* Search Content */}
+            <div className="flex flex-col space-y-3">
+              <input
+                type="text"
+                placeholder="Search..."
+                className="border border-gray-300 rounded px-3 py-2 w-full"
+              />
+              <select className="border border-gray-300 rounded px-2 py-2 bg-gray-50">
+                <option>Books & Journals</option>
+                <option>Journal of Health Politics, Policy and Law</option>
+                <option>Other Journal</option>
+              </select>
+              <button className="bg-blue-400 text-white px-4 py-2 rounded flex items-center justify-center">
+                <FiSearch size={18} className="mr-2" /> Search
+              </button>
+              <Link
+                to="/advance_search"
+                className="text-sm text-gray-700 hover:underline text-center"
+                onClick={() => setOpen(false)}
+              >
+                Advanced Search
+              </Link>
+            </div>
+          </div>
+
+          {/* Click outside to close */}
+          <div
+            className="flex-1"
+            onClick={() => setOpen(false)}
+          ></div>
         </div>
 
+      )}
         {/* Register / Sign In (hidden on mobile) */}
-        <div className="hidden md:flex items-center space-x-4">
-          <Link to="/register" className="text-sm text-gray-700 hover:underline">
-            Register
-          </Link>
-          <Link to="/login" className="text-sm text-gray-700 hover:underline">
-            Sign In
-          </Link>
-        </div>
+         <div className="hidden md:flex items-center space-x-4">
+        <Link to="/register" className="text-sm text-gray-700 hover:underline">
+          Register
+        </Link>
+        <Link to="/login" className="text-sm text-gray-700 hover:underline">
+          Sign In
+        </Link>
+      </div>
+
+      {/* Mobile User Icon */}
+      <div className="relative md:hidden">
+        <button
+          className="text-gray-700"
+          onClick={() => setOpenuser(!openuser)}
+        >
+          <FaRegCircleUser size={22} className="mt-2"/>
+        </button>
+
+        {/* Dropdown Menu */}
+        {openuser && (
+          <div className="absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-lg z-50">
+            <Link
+              to="/register"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              onClick={() => setOpenuser(false)}
+            >
+              Register
+            </Link>
+            <Link
+              to="/login"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              onClick={() => setOpenuser(false)}
+            >
+              Sign In
+            </Link>
+          </div>
+        )}
+      </div>
 
         {/* Mobile Hamburger */}
         <button
