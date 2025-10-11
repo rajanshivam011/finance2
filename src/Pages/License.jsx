@@ -101,11 +101,6 @@ const License = () => {
               <p>
                 Most permissions requests can be submitted online. Please include full bibliographic details, the material you wish to use, the medium and circulation, and intended use. If your request involves translation or adaptation, include the target language and territory.
               </p>
-
-              <h3 className="mt-8 text-2xl font-bold">Contact for Rights & Permissions</h3>
-              <p>
-                For further assistance contact <a className="text-blue-700 hover:underline">rights@dukeupress.edu</a> and we will respond as soon as possible.
-              </p>
             </div>
           </section>
         </main>

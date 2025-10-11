@@ -88,13 +88,13 @@ const Submission_GuideLlnes = () => {
           <p className="mb-4 text-gray-900">
             We do not consider unsolicited book reviews.
           </p>
-          <h2 className="text-lg font-bold mb-2 text-gray-900">Submission Instructions</h2>
-          <p className="mb-4 text-gray-900">
+          {/* <h2 className="text-lg font-bold mb-2 text-gray-900">Submission Instructions</h2> */}
+          {/* <p className="mb-4 text-gray-900">
             Please visit <a href="https://mc04.manuscriptcentral.com/dup-jhppl" className="text-blue-700 underline">https://mc04.manuscriptcentral.com/dup-jhppl</a>. If this is your first time using our ScholarOne site, please register by clicking on “Create an Account” from the Log In page. Once you have registered, log in and click the “Author” tab and select “Start New Submission.”
-          </p>
-          <p className="mb-4 text-gray-900">
+          </p> */}
+          {/* <p className="mb-4 text-gray-900">
             If you have difficulty registering or submitting your manuscript, please contact us at <a href="mailto:jhppl-editor@dukeupress.edu" className="text-blue-700 underline">jhppl-editor@dukeupress.edu</a>.
-          </p>
+          </p> */}
         </div>
       </div>
       <Footer />

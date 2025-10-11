@@ -115,23 +115,7 @@ const Society = () => {
             </div>
 
             {/* Journals Content Platforms */}
-            <div className="mb-10">
-              <h3 className="text-2xl font-bold mb-4">Journals Content Platforms</h3>
-              <ul className="list-disc list-inside text-slate-700 space-y-2">
-                <li>
-                  Social science and humanities content is hosted at{" "}
-                  <a href="https://read.dukeupress.edu" className="text-blue-700 hover:underline">
-                    read.dukeupress.edu
-                  </a>
-                </li>
-                <li>
-                  Mathematics and statistics content is hosted at{" "}
-                  <a href="https://projecteuclid.org" className="text-blue-700 hover:underline">
-                    projecteuclid.org
-                  </a>
-                </li>
-              </ul>
-            </div>
+         
 
             {/* Contact */}
             <div className="mb-20">

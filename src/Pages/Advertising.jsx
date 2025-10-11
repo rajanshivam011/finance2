@@ -10,7 +10,7 @@ const Advertising = () => {
         <h1 className="text-4xl font-bold mb-8">Journal of Health Politics, Policy and Law</h1>
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar with photo-like cover */}
-          <aside className="w-full md:w-1/4 rounded shadow p-0 flex flex-col items-center">
+          {/* <aside className="w-full md:w-1/4 rounded shadow p-0 flex flex-col items-center">
             <div className="w-80 h-[420px] bg-gradient-to-b from-[#503a56] to-purple-200 rounded-lg overflow-hidden shadow-xl border-4 border-white mb-4">
               <div className="mt-10 mb-32 text-center leading-tight text-white">
                 Journal of<br />
@@ -27,14 +27,14 @@ const Advertising = () => {
             <div className="ml-2 mt-2 text-xs text-gray-700 font-bold">
               ISSN 0361-6878<br />
               EISSN 1527-1927
-            </div>
-            <div className="font-bold mt-4 mb-2 ml-2">In this Issue</div>
+            </div> */}
+            {/* <div className="font-bold mt-4 mb-2 ml-2">In this Issue</div>
             <ul className="text-sm text-blue-700 space-y-1 mb-4 ml-2">
               <li>Articles</li>
               <li>Tracking Health Reform</li>
             </ul>
             <a href="#" className="text-blue-700 underline text-sm ml-2">&lt; Previous Issue</a>
-          </aside>
+          </aside> */}
 
           {/* Journal Info and Description */}
           <div className="flex-1">

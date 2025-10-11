@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import RightSidebar from "./RightSidebar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 // Organize all content into sections
 const sections = [
@@ -11,77 +11,77 @@ const sections = [
     articles: [
       {
         title:
-          "Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases",
-          id:"/hos_con",
+          "Impact Of Emerging Farming Practices On Antioxidant Activity In Commonly Eaten Leafy Vegetables",
+          url:"/Vol_1/6.pdf",
           authors: [
-          "Katherine L. Gudiksen",
-          "Andréa E. Caballero",
-          "Paul B. Ginsburg",
-          "Bruce Allain",
-          "Thomas L. Greaney",
+          "Pooja Kashyap1* and Monika Jain1" ,
         ],
         free: true,
         abstract:
-          "Context: Consolidation among health systems has resulted in increased prices and has caused the cost of employer-sponsored health benefits to increase much faster than inflation over the past few decades. Earlier quantitative research shows small but significant price increases resulting from transactions that expand the geographic footprint of health systems, but the mechanisms by which these cross-market acquisitions raise prices is not completely resolved. Methods: In this qualitative study, the authors interview market participants to elucidate the experience of employers, insurers, and others when negotiating with large health systems.Findings: The respondents report that employer demand for broad, stable provider networks and a lack of employer support for insurers when negotiating with large health systems undermined insurers’ ability to negotiate lower prices. Additionally, the interviews identified the widespread use of restrictive contract terms by health systems and misaligned financial incentives between employers and consultants engaged to act on their behalf.Conclusions: Without government action, employers will be unable to restrain price increases that result from increasing market power of consolidated health systems. The authors identify policy levers that regulators can use to increase competition, but the oligopolistic nature of many health care markets in the United States suggest that even more significant government action may be needed.",
+          `Context: Precision medicine (PM) focuses on customizing medical attention to genetic, environmental, and lifestyle
+            factors pertaining to the individual’s life. In India, growing initiatives like the Genome India Project and Indian
+            Cancer Genome Atlas aim to map genetic diversity for personalized therapies. PM has shown significant promise in
+            oncology, asthma, diabetes, and rare genetic disorders. Integration with technologies such as AI and multi-omics
+            enhances disease prediction and targeted therapy. Despite rapid progress, challenges like data privacy, regulatory gaps,
+            limited infrastructure, and public awareness persist. Addressing these hurdles is vital to realize the full potential of
+            precision medicine in Indian healthcare.`,
         links: [
           { label: "Abstract" },
           { label: "View article", url: "#" },
-          { label: "PDF", url: "/pdf/1.pdf" },
+          { label: "PDF", url: "/Vol_1/6.pdf" },
         ],
       },
       {
         title:
-          "It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns",
-          id:"/crisis",
+          "Precision Medicine: Advancements, Applications, and Future Directions - Perspectives from India",
+          url:"/Vol_2/6.pdf",
           authors: [
-          "Rachael L. M. Erickson",
-          "Joshua Meyer-Gutbrod",
+          "Syed Mohamed Omar1*, Raziur Rahman M1 , Arya Sandip Jadhav1, Sujitha Mathivanan1, Dr K P Arun1 Dr Deepalakshmi1",
         ],
         free: true,
         abstract:
-          `Context: Paid leave for serious personal and family illnesses can significantly improve health outcomes. With no federal paid family and medical leave (PFML) policy, states are increasingly adopting their own. Yet eligibility criteria for paid leave and job protection vary markedly across states, as does benefit adequacy, affecting coverage and equity.
-Methods: The authors developed a database of state-level paid leave policies to systematically analyze each state's eligibility criteria for leave and job protection. They applied the policy database's detailed criteria to employment data from the US Current Population Survey Annual Social and Economic Supplement to analyze eligibility by race/ethnicity, gender, and education. They measured benefit adequacy by analyzing whether family income would drop below the federal poverty threshold during a worker's leave.
-Findings: Minimum earnings, tenure, and hours rules disproportionately exclude workers with less education and women from paid leave and/or job protection. Minimum firm size disproportionately excludes workers with less education and Latinx workers from job protection. Black and Latinx workers’ family income is more likely to fall below poverty during leave.
-Conclusions: State-level PFML has expanded coverage in the absence of a federal policy. Remaining gaps and inequities could be reduced by lowering or eliminating requirements for minimum firm size, tenure, and hours; raising wage replacement rates; and ensuring full job protection.`,
+          `Context: Precision medicine (PM) focuses on customizing medical attention to genetic, environmental, and lifestyle
+            factors pertaining to the individual’s life. In India, growing initiatives like the Genome India Project and Indian
+            Cancer Genome Atlas aim to map genetic diversity for personalized therapies. PM has shown significant promise in
+            oncology, asthma, diabetes, and rare genetic disorders. Integration with technologies such as AI and multi-omics
+            enhances disease prediction and targeted therapy. Despite rapid progress, challenges like data privacy, regulatory gaps,
+            limited infrastructure, and public awareness persist. Addressing these hurdles is vital to realize the full potential of
+            precision medicine in Indian healthcare.`,
         links: [
           { label: "Abstract" },
           { label: "Supplementary data", url: "#" },
-          { label: "PDF", url: "/pdf/crisis.pdf" },
+          { label: "PDF", url: "/Vol_2/6.pdf" },
         ],
       },
       {
         title:
-          "Paid Leave for Personal and Family Illness: Impacts of State Policy Design on Coverage and Access by Race, Gender, and Education Level",
-          id:"/hus_con",
+          "Towards Sustainable Taxation: Bridging Fiscal Inequity And Environmental Responsibility In Indian Agriculture ",
+          url:"/Vol_3/6.pdf",
           authors: [
-          "Aleta Sprague",
-          "Alison Earle",
-          "Amy Raub",
-          "Firooz Kabir",
-          "Michael McCormack",
+          "Prof. Ravindra Tripathi1, Mrs. Suruchi Singhal2, Dr. Mano Ashish Tripathi3",
         ],
         free: true,
         abstract:
-          `Context: Paid leave for serious personal and family illnesses can significantly improve health outcomes. With no federal paid family and medical leave (PFML) policy, states are increasingly adopting their own. Yet eligibility criteria for paid leave and job protection vary markedly across states, as does benefit adequacy, affecting coverage and equity.
-            Methods: The authors developed a database of state-level paid leave policies to systematically analyze each state's eligibility criteria for leave and job protection. They applied the policy database's detailed criteria to employment data from the US Current Population Survey Annual Social and Economic Supplement to analyze eligibility by race/ethnicity, gender, and education. They measured benefit adequacy by analyzing whether family income would drop below the federal poverty threshold during a worker's leave.
-            Findings: Minimum earnings, tenure, and hours rules disproportionately exclude workers with less education and women from paid leave and/or job protection. Minimum firm size disproportionately excludes workers with less education and Latinx workers from job protection. Black and Latinx workers’ family income is more likely to fall below poverty during leave.
-            Conclusions: State-level PFML has expanded coverage in the absence of a federal policy. Remaining gaps and inequities could be reduced by lowering or eliminating requirements for minimum firm size, tenure, and hours; raising wage replacement rates; and ensuring full job protection.`,
+          `Context: In the context of fiscal sustainability and environmental stewardship, this paper presents a critical analysis of the case
+            of taxation of agricultural income in India in the context of both equity and efficiency. Agricultural income has
+            traditionally been tax-exempt because of its socio-economic weaknesses and food security needs, even though the
+            economic character of the sector has undergone substantial transformation`,
         links: [
           { label: "Abstract" },
-          { label: "PDF", url: "/pdf/3.pdf" },
+          { label: "PDF", url: "/Vol_3/6.pdf" },
         ],
       },
       {
-        title: "Analyzing Public Support for School-Based Mental Health Services",
-        id:"/hus_con",
-        authors: ["Nicholas Hemauer", "Seth Warner"],
+        title: "Early Indicators Of Alterations In Hematological And Inflammatory Biomarkers Among Smoking And Smokeless Tobacco Users - Comparative Analysis",
+        url:"/Vol_3/7.pdf",
+        authors: ["Manikandan Sathiyaseelan1, Vickneshwaran Vinayagam2, Pradeep Jothimani3, Pajanivel Ranganadin4,Balanehru Subramanian5, Richa Gupta6, Nikhilesh Singh"],
         free: true,
         abstract: "This article analyzes public support for mental health services in schools.",
         links: [
           { label: "Abstract" },
           { label: "View article", url: "#" },
           { label: "Supplementary data", url: "#" },
-          { label: "PDF", url: "/pdf/4.pdf" },
+          { label: "PDF", url: "/Vol_3/7.pdf" },
         ],
       },
     ],
@@ -90,15 +90,15 @@ Conclusions: State-level PFML has expanded coverage in the absence of a federal 
     label: "TRACKING HEALTH REFORM",
     articles: [
       {
-        title: "Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism",
-        id:"/hus_con",
-        authors: ["Michael K. Gusmano", "Frank J. Thompson"],
+        title: "Do Location-Driven Perceptions Matter In Policy Governance? An Empirical Study Of MGNREGA Outcome In Assam ",
+        url:"/Right/18.pdf",
+        authors: ["Masud Ul Haque1, Abdur Rashid Ahmed2"],
         free: true,
-        abstract: "This article discusses Medicaid and the impact of federalism on administrative presidency.",
+        abstract: "India’s largest and most extensive government-funded right-based rural employment programme, the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), has been instrumental in alleviating rural poverty.However, its outcomes vary across geographic and socio-economic contexts.",
         links: [
           { label: "Abstract" },
           { label: "View article", url: "#" },
-          { label: "PDF", url: "/pdf/5.pdf" },
+          { label: "PDF", url: "/Right/18.pdf" },
         ],
       },
     ],
@@ -107,123 +107,107 @@ Conclusions: State-level PFML has expanded coverage in the absence of a federal 
     label: "BOOKS",
     articles: [
       {
-        title: "Politics and Expertise: How to Use Science in a Democratic Society",
-        id:"/hus_con",
-        authors: ["Ann C. Keller"],
+        title: "TP53 As A Early Recurrence-Linked Biomarker In Tongue Squamous Cell Carcinoma: A Proteomic And Bioinformatic Study",
+        url:"/Right/19.pdf",
+        authors: ["G. V. Lakshmi1*, K. Eswar Kumar2, Parthasarathi Bhattacharyya3, K. G. K. Deepak4, John Dogulas Palleti5 "],
         free: true,
-        abstract: "This book explores the role of science and expertise in democratic societies.",
+        abstract: "Tongue squamous cell carcinoma (TSCC) is characterized by high recurrence rates and poor prognosis, yet the underlying molecular mechanisms remain incompletely defined",
         links: [
           { label: "Extract" },
           { label: "View article", url: "#" },
-          { label: "PDF", url: "/pdf/6.pdf" },
+          { label: "PDF", url: "/Right/19.pdf" },
         ],
       },
       {
-        title: "The COVID-19 Intelligence Failure: Why Warning Was Not Enough",
-        id:"/hus_con",
-        authors: ["Robert L. Ostergard, Jr."],
+        title: "Corporate Environmental Values And Culture As Catalysts For Sustainable Business Practices",
+        url:"/Right/20.pdf",
+        authors: ["Dr Suman Kolpula1, Dr. S. Udayakumar2, G. Kothandaraman3, Dr. Ramprakash O. Panchariya4, Dr.Kumari Soni5, Dr. Swati Gupta6"],
         free: true,
-        abstract: "This book examines intelligence failures during the COVID-19 pandemic.",
+        abstract:"This research investigates the dynamic intersection of Corporate Environmental Values (CEVs), Environmental Culture (EC), and Business Sustainability (BS) in Indian companies with a huge mixed-methods research design.",
         links: [
           { label: "Extract" },
           { label: "View article", url: "#" },
-          { label: "PDF", url: "/pdf/7.pdf" },
+          { label: "PDF", url: "/Right/20.pdf" },
         ],
       },
-    ],
-  },
-];
-
-const sidebarTabs = [
-  {
-    label: "LATEST",
-    articles: [
-      "Medicaid and the Great Unwinding: The Administrative Presidency Meets Federalism",
-      "Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases",
-      "Analyzing Public Support for School-Based Mental Health Services",
-      "It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns",
-      "Paid Leave for Personal and Family Illness: Impacts of State Policy Design on Coverage and Access by Race, Gender, and Education Level",
-    ],
-  },
-  {
-    label: "MOST READ",
-    articles: [
-      "Polarization, Partisanship, and Health in the United States",
-      "What Is Wellness Now?",
-      "It’s Only a Crisis if It’s Fit to Print: Examining the Relationship Between Overdose Rates, News Coverage, and the Presence of the Opioid Crisis in State Legislative Campaigns",
-      "Hospital Consolidation Across Geographic Markets: Insights from Market Participants on Mechanisms for Price Increases",
-      "Medicare at 60: A Popular Program Facing Challenges",
-    ],
-  },
-  {
-    label: "MOST CITED",
-    articles: [
-      "Arrests of and Forced Interventions on Pregnant Women in the United States, 1973–2005: Implications for Women's Legal Status and Public Health",
-      "Pandemic Politics: Timing State-Level Social Distancing Responses to COVID-19",
-      "Weighing Both Sides: Morality, Mortality, and Framing Contests over Obesity",
-      "The Biological Concept of Race and Its Application to Public Health and Epidemiology",
-      "Lay Participation in Health Care Decision Making: A Conceptual Framework",
+      {
+        title: "Bio-Ecological Assessment of the Cereal Cyst Nematode (Heterodera Avenae) in the North West of Algeria ",
+        url:"/Right/21.pdf",
+        authors: ["Baghdadi Djilali1, Si Mohammed Abdesselem2, Bentaallah Mohammed El Amine3, Cherrad Hayet4,Berkane Ibrahim5, Berkane Benaouda6"],
+        free: true,
+        abstract:"This research investigates the dynamic intersection of Corporate Environmental Values (CEVs), Environmental Culture (EC), and Business Sustainability (BS) in Indian companies with a huge mixed-methods research design.",
+        links: [
+          { label: "Extract" },
+          { label: "View article", url: "#" },
+          { label: "PDF", url: "/Right/21.pdf" },
+        ],
+      },
     ],
   },
 ];
 
 export default function Viewallissue() {
-  // const [tab, setTab] = useState(0);
   const [openAbstract, setOpenAbstract] = useState(null);
-
+  const nav=useNavigate();
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 min-h-screen py-8 px-2">
+      <div className="bg-teal-50 min-h-screen py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
           {/* Left Sidebar */}
-          <aside className="w-full md:w-1/4 bg-white rounded shadow p-0 flex flex-col">
+          {/* <aside className="w-full md:w-1/4 bg-white rounded-xl shadow-lg p-0 flex flex-col">
             <div className="flex-shrink-0 z-10">
-            <div className="w-80 h-[420px] bg-gradient-to-b from-[#503a56] to-purple-200 rounded-lg flex flex-col justify-center items-center text-white font-bold text-xl p-6">
-              <div className="mt-10 mb-32 text-center leading-tight">
-                Journal of<br />
-                Health Politics,<br />
-                Policy<br />
-                and Law
+              <div className="w-full h-[420px] bg-gradient-to-b from-teal-600 to-teal-800 rounded-t-xl flex flex-col justify-center items-center text-white font-bold text-xl p-6">
+                <div className="mt-10 mb-32 text-center leading-tight">
+                  Global<br />
+                  Policy<br />
+                  Review
+                </div>
+                <div className="text-teal-200 text-xs mt-auto mb-6 text-left w-full pl-2">
+                  Volume 12<br />
+                  Number 3<br />
+                  November 2025
+                </div>
               </div>
-              <div className="text-purple-200 text-xs mt-auto mb-6 text-left w-full pl-2">
-                Volume 50<br />
-                Number 5<br />
-                October 2025
-              </div>
-              {/* <div className="w-3 h-3 bg-purple-300 rounded-sm mt-2"></div> */}
             </div>
-          </div>
-              <div className="ml-8 mt-8 text-xs text-gray-700 font-bold">
-                ISSN 0361-6878<br />
-                EISSN 1527-1927
-              </div>
-              <div className="font-bold mt-4 mb-2 ml-8">In this Issue</div>
-              <ul className="text-sm text-blue-700 space-y-1 mb-4 ml-8">
-                <li>Articles</li>
-                <li>Tracking Health Reform</li>
-              </ul>
-              <a href="#" className="text-blue-700 underline text-sm ml-8">&lt; Previous Issue</a>
-          </aside>
+            <div className="ml-8 mt-8 text-xs text-gray-700 font-bold">
+              ISSN 8765-4321<br />
+              EISSN 1234-5678
+            </div>
+            <div className="font-bold mt-4 mb-2 ml-8 text-teal-700">In this Issue</div>
+            <ul className="text-sm text-teal-600 space-y-1 mb-4 ml-8">
+              <li>Articles</li>
+              <li>Tracking Health Reform</li>
+              <li>Books</li>
+            </ul>
+            <a href="#" className="text-teal-600 underline text-sm ml-8 hover:border-b-2 border-amber-500 transition-all">
+              &lt; Previous Issue
+            </a>
+          </aside> */}
 
           {/* Main Content */}
           <main className="flex-1">
-            {/* ...unchanged search bar... */}
-            <div className="bg-white rounded shadow p-4">
+            <div className="bg-white rounded-xl shadow-lg p-6">
               {sections.map((section, sIdx) => (
                 <div key={sIdx}>
-                  <div className={`font-bold text-lg mb-4 ${sIdx > 0 ? "mt-8" : ""}`}>
+                  <div className={`font-bold text-lg mb-4 ${sIdx > 0 ? "mt-8" : ""} text-teal-700`}>
                     {section.label}
                   </div>
                   {section.articles.map((a, idx) => (
-                    <div key={idx} className="mb-8 pb-4 border-b last:border-b-0 relative">
-                      <Link to={`${a.id}`} className="text-xl font-semibold text-blue-700 hover:underline">
+                    <div key={idx} className="mb-8 pb-4 border-b border-gray-200 last:border-b-0 relative">
+                      <Link
+                        to={`${a.url}`} 
+                        target="_blank"
+                        className="text-xl font-semibold text-teal-700 hover:border-b-2 border-amber-500 transition-all"
+                      >
                         {a.title}
                         {a.free && (
-                          <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-700 text-xs rounded">FREE</span>
+                          <span className="ml-2 px-2 py-0.5 bg-teal-100 text-teal-700 text-xs rounded font-bold">
+                            FREE
+                          </span>
                         )}
                       </Link>
-                      <div className="mt-1 text-sm text-blue-700">
+                      <div className="mt-1 text-sm text-teal-600">
                         {a.authors.map((author, i) => (
                           <span key={i}>
                             {author}
@@ -231,25 +215,25 @@ export default function Viewallissue() {
                           </span>
                         ))}
                       </div>
-                      <div className="mt-2 flex gap-2 flex-wrap">
+                      <div className="mt-4 flex gap-2 flex-wrap">
                         {a.links.map((l, i) =>
                           l.label === "Abstract" || l.label === "Extract" ? (
                             <div key={i} className="relative">
                               <button
                                 type="button"
-                                className="px-2 py-1 border rounded text-sm bg-gray-50 hover:bg-gray-100"
+                                className=" cursor-pointer px-3 py-1 border border-gray-200 rounded-lg text-sm bg-teal-50 text-teal-700 hover:bg-teal-100 transition-all"
                                 onClick={() =>
                                   setOpenAbstract(openAbstract === `${sIdx}-${idx}` ? null : `${sIdx}-${idx}`)
                                 }
                               >
-                                {l.label}
+                                {l.label} <span className="ml-1">&#9660;</span>
                               </button>
                               {openAbstract === `${sIdx}-${idx}` && (
-                                <div className="absolute left-0 mt-2 w-96 bg-white border border-gray-300 rounded shadow-lg z-10 p-4 text-gray-800">
-                                  <div className="font-bold mb-2">{l.label}</div>
+                                <div className="cursor-pointer absolute left-0 mt-2 w-96 bg-white border border-gray-100 rounded-lg shadow-xl z-10 p-4 text-gray-700 animate-fadeIn">
+                                  <div className="font-bold mb-2 text-teal-700">{l.label}</div>
                                   <div>{a.abstract}</div>
                                   <button
-                                    className="mt-3 text-blue-700 underline text-sm"
+                                    className="mt-3 text-teal-600 underline text-sm hover:text-amber-500"
                                     onClick={() => setOpenAbstract(null)}
                                   >
                                     Close
@@ -261,7 +245,8 @@ export default function Viewallissue() {
                             <a
                               key={i}
                               href={l.url}
-                              className="px-2 py-1 border rounded text-sm bg-gray-50 hover:bg-gray-100"
+                              className="px-3 py-1 border border-gray-200 rounded-lg text-sm bg-teal-50 text-teal-700 hover:bg-teal-100 transition-all"
+                              {...(l.label === "PDF" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                             >
                               {l.label}
                             </a>
@@ -278,43 +263,31 @@ export default function Viewallissue() {
           {/* Right Sidebar */}
           <aside className="w-full md:w-1/4 flex flex-col gap-6">
             {/* Email Alerts */}
-            {/* <div className="bg-black text-white rounded shadow mb-4">
-              <div className="font-bold px-4 py-2 border-b border-gray-700">EMAIL ALERTS</div>
-              <div className="bg-blue-700 px-4 py-2 hover:bg-blue-800 cursor-pointer">Advance Publication</div>
-              <div className="bg-blue-700 px-4 py-2 hover:bg-blue-800 cursor-pointer">Latest Issue</div>
-            </div> */}
-            {/* Tabs */}
-            {/* <div className="bg-white rounded shadow">
-              <div className="flex border-b">
-                {sidebarTabs.map((t, i) => (
-                  <button
-                    key={i}
-                    className={`flex-1 px-4 py-2 font-bold text-sm ${
-                      tab === i
-                        ? "border-b-2 border-black text-black"
-                        : "text-gray-700"
-                    }`}
-                    onClick={() => setTab(i)}
-                  >
-                    {t.label}
-                  </button>
-                ))}
+            <div className="bg-teal-800 text-white rounded-xl shadow-lg">
+              <div className="font-bold px-4 py-2 border-b border-teal-700">EMAIL ALERTS</div>
+              <div className="bg-teal-600 px-4 py-2 hover:bg-teal-700 cursor-pointer transition-all" onClick={() => nav('/ap')}>
+                Advance Publication
               </div>
-              <div className="p-4">
-                {sidebarTabs[tab].articles.map((art, i) => (
-                  <div key={i} className="mb-2">
-                    <a href="#" className="text-blue-700 underline text-sm">
-                      {art}
-                    </a>
-                  </div>
-                ))}
+              <div className="bg-teal-600 px-4 py-2 hover:bg-teal-700 cursor-pointer transition-all" onClick={() => nav('/')}>
+                Latest Issue
               </div>
-            </div> */}
-            <RightSidebar/>
+            </div>
+            {/* RightSidebar Component */}
+            <RightSidebar />
           </aside>
         </div>
       </div>
       <Footer />
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out;
+        }
+      `}</style>
     </>
   );
 }

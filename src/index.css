@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@tailwind utilities;
+
+:root {
+  --indigo-primary: #2C3E50;
+  --indigo-dark: #1A2533;
+  --sunset-accent: black;
+  --ivory: #FDFDFD;
+}
+
+@layer utilities {
+  .bg-indigo-primary {
+    background-color: var(--indigo-primary);
+  }
+  .text-indigo-primary {
+    color: var(--indigo-primary);
+  }
+  .bg-indigo-dark {
+    background-color: var(--indigo-dark);
+  }
+  .text-sunset-accent {
+    color: var(--sunset-accent);
+  }
+  .bg-ivory {
+    background-color: var(--ivory);
+  }
+  .border-indigo-primary {
+    border-color: var(--indigo-primary);
+  }
+  .border-sunset-accent {
+    border-color: var(--sunset-accent);
+  }
+  .focus:ring-indigo-primary {
+    --tw-ring-color: var(--indigo-primary);
+  }
+}

@@ -39,7 +39,7 @@ const featureCards = [
   { title: "Title List", icon: FaListAlt || FaFilePdf }, // fallback
   { title: "Manage Your Account", icon: FaTools },
   { title: "Usage Statistics", icon: FaChartBar },
-  { title: "Duke University Press", icon: FaUniversity },
+  { title: "University", icon: FaUniversity },
   { title: "Project Euclid", icon: FaUsers },
   { title: "Scholarly Publishing Collective", icon: FaUsers },
   { title: "Library Research Tools", icon: FaBook },
@@ -127,18 +127,11 @@ const Librarians = () => {
                 <li>Religious Studies (PDF)</li>
                 <li>Transgender Studies (PDF)</li>
               </ul>
-
-              <h3 className="mt-8 text-2xl font-bold">IP Authentication Update</h3>
-              <p>
-                To submit IP address updates to <strong>Duke University Press</strong> and
-                <strong> Scholarly Publishing Collective</strong> please use the IP registry.
-              </p>
-
               <h3 className="mt-8 text-2xl font-bold">Contact Library Relation Team</h3>
               <p>
-                The Library Relations Team is your point of contact for information about our digital
-                products. Contact <a className="text-blue-700 hover:underline">dup_libraryrelations@duke.edu</a>
-                for product questions, pricing, and licensing.
+                The Library Relations Team is your point of contact for information about our digital products.
+                {/* <a className="text-blue-700 hover:underline">dup_libraryrelations@duke.edu</a>
+                for product questions, pricing, and licensing. */}
               </p>
             </div>
 
