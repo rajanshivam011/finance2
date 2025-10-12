@@ -16,11 +16,11 @@ const SidebarMenu = ({ open, onClose }) => {
       }`}
       style={{ fontFamily: "'Inter', Roboto, Helvetica, Arial, sans-serif" }}
     >
-      <div className="flex items-center justify-between px-6 py-4 border-b border-teal-700 bg-teal-900 rounded-t-xl">
-        <img src="/Logo-1.svg" alt="Duke University Press" className="h-10 bg-white p-2 rounded-md" />
+      <div className="flex items-center justify-between px-6 py-4 border-teal-700 bg-teal-900 rounded-t-xl">
+        <img src="/logo.jpg" alt="Duke University Press" className="h-10  p-2 rounded-md" />
         <button 
           onClick={onClose} 
-          className="text-2xl text-white hover:text-amber-500 transition-transform hover:scale-110"
+          className="cursor-pointer text-2xl text-white hover:text-amber-500 transition-transform hover:scale-110"
           aria-label="Close sidebar"
         >
           <FiX />

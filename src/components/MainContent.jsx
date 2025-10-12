@@ -13,10 +13,11 @@ const MainContent = () => {
             {/* Journal Icon */}
             <div className="flex-shrink-0 z-10 flex justify-center md:justify-start">
               <div 
-                className="w-28 h-28 md:w-36 md:h-36 bg-teal-100 rounded-xl shadow-lg flex items-center justify-center transition-transform hover:scale-105"
+                className="w-44 h-44 md:w-40 md:h-40 bg-teal-100 rounded-xl shadow-lg flex items-center justify-center transition-transform hover:scale-105"
                 aria-label="Global Policy Review Icon"
               >
-                <FaBook className="text-7xl md:text-9xl text-teal-600" />
+                <img src="/side_l.jpg" alt="Journal Logo" className="w-44 h-44 md:w-36 md:h-36 border-gray-300 inline-block p-2 rounded-xl"/>
+                {/* <FaBook className="text-7xl md:text-9xl text-teal-600" /> */}
               </div>
             </div>
 
@@ -28,8 +29,8 @@ const MainContent = () => {
                   Volume 12, Issue 3, November 2025
                 </div>
                 <button
-                  className="bg-gradient-to-r from-teal-600 to-teal-800 hover:from-teal-700 hover:to-teal-900 text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
-                  onClick={() => nav("/issues")}
+                  className="cursor-pointer bg-gradient-to-r from-teal-600 to-teal-800 hover:from-teal-700 hover:to-teal-900 text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg"
+                  onClick={() => nav("/viewallissue")}
                   aria-label="View latest issue"
                 >
                   EXPLORE THIS ISSUE
@@ -275,7 +276,7 @@ const MainContent = () => {
             <div className="p-6">
               <h3 className="font-bold text-2xl mb-3 text-teal-700">Stay Updated</h3>
               <p className="text-base sm:text-lg text-gray-700">
-                Sign up for <span className="italic">Global Policy Review</span>{" "}
+                Sign up for <span className="italic">Journal Health Policy Review</span>{" "}
                 <a 
                   href="/alerts" 
                   className="text-teal-600 hover:border-b-2 border-amber-500 font-semibold transition-all"
@@ -303,7 +304,7 @@ const MainContent = () => {
                 Submit Your Work
               </h3>
               <p className="text-base sm:text-lg text-gray-700">
-                Contribute to <span className="italic">Global Policy Review</span>. Learn how to submit your research via our{" "}
+                Contribute to <span className="italic">Journal Health Policy Review</span>. Learn how to submit your research via our{" "}
                 <Link
                   to="/submission_guide"
                   className="text-teal-600 hover:border-b-2 border-amber-500 font-semibold transition-all"
@@ -325,7 +326,7 @@ const MainContent = () => {
             <div className="p-6">
               <h3 className="font-bold text-2xl mb-3 text-teal-700">Subscribe</h3>
               <p className="text-base sm:text-lg text-gray-700">
-                Access <span className="italic">Global Policy Review</span>{" "}
+                Access <span className="italic">Journal Health Policy Review</span>{" "}
                 <a 
                   href="/subscribe" 
                   className="text-teal-600 hover:border-b-2 border-amber-500 font-semibold transition-all"

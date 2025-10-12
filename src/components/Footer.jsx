@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo */}
           <div className="">
-            <img src="/logo.jpg" alt="Journal Logo" className="border-gray-300 inline-block p-4 rounded-xl"/>
+            <img src="/Logo-1.svg" alt="Journal Logo" className="border-gray-300 inline-block p-4 bg-white rounded-xl"/>
           </div>
 
           {/* About / Links */}
