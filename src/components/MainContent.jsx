@@ -13,16 +13,16 @@ const MainContent = () => {
             {/* Journal Icon */}
             <div className="flex-shrink-0 z-10 flex justify-center md:justify-start">
               <div 
-                className="w-44 h-44 md:w-40 md:h-40 bg-teal-100 rounded-xl shadow-lg flex items-center justify-center transition-transform hover:scale-105"
+                className="w-52 h-52 md:w-52 md:h-52 bg-teal-100 rounded-xl shadow-lg flex items-center justify-center transition-transform hover:scale-105"
                 aria-label="Global Policy Review Icon"
               >
-                <img src="/side_l.jpg" alt="Journal Logo" className="w-44 h-44 md:w-36 md:h-36 border-gray-300 inline-block p-2 rounded-xl"/>
+                <img src="/side_l.jpg" alt="Journal Logo" className="w-52 h-52 md:h-52 md:w-52 border-gray-300 inline-block rounded-xl p-1"/>
                 {/* <FaBook className="text-7xl md:text-9xl text-teal-600" /> */}
               </div>
             </div>
 
             {/* Issue Info */}
-            <div className="flex-1 z-10 text-left mt-12">
+            <div className="flex-1 z-10 text-left">
               <div className="mt-6 justify-start">
                 <div className="font-semibold text-2xl text-teal-700 mb-4">Latest Issue</div>
                 <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-teal-800 mb-8 tracking-tight">
@@ -46,7 +46,7 @@ const MainContent = () => {
               style={{ fontFamily: "'Inter', Roboto, Helvetica, Arial, sans-serif" }}
             >
               <div className="flex-1 md:ml-16">
-                <div className="font-bold text-2xl sm:text-3xl mb-4 text-teal-700 ml-8">
+                <div className="font-bold text-2xl sm:text-3xl mb-4 text-teal-700 md:ml-22">
                   About Journal
                 </div>
                 <div className="text-gray-700 mb-4 text-base sm:text-lg">
