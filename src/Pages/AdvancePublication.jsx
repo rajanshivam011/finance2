@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import RightSidebar from "./RightSidebar";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 const articles = [
   {
     type: "RESEARCH ARTICLE",
-    date: "August 11 2025",
+    date: "October 08 2025",
     url: "/Author/1.pdf",
     title: "Able Taxation: Bridging Fiscal Inequity And Environmental Responsibility In Indian Agriculture ",
     authors: ["Prof. Ravindra Tripathi1, Mrs. Suruchi Singhal2, Dr. Mano Ashish Tripathi3"],
@@ -21,7 +21,7 @@ const articles = [
   },
   {
     type: "RESEARCH ARTICLE",
-    date: "August 11 2025",
+    date: "October 08 2025",
     url: "/Author/2.pdf",
     title: "Machine Learning For Website Defacement Detection: A Survey Of Techniques, Trends, And Challenges ",
     authors: [
@@ -37,7 +37,7 @@ const articles = [
   },
   {
     type: "BOOK REVIEW",
-    date: "August 11 2025",
+    date: "October 08 2025",
     url: "/Author/3.pdf",
     title: "The Interplay Between Service Quality And Strategy In Driving Supermarket Popularity In Myanmar ",
     authors: ["Phyu Phyu Kyaing 1,Ph.D. Research scholar, Dr.Amiya Bhaumik 2, Dr.OyyappanDuraipandi"],
@@ -49,17 +49,17 @@ the country’s supermarket popularity`,
   },
   {
     type: "RESEARCH ARTICLE",
-    date: "August 11 2025",
+    date: "October 08 2025",
     url: "/Author/4.pdf",
     title: "Deep Hybrid CNN-LSTM Framework For Advanced Social Media Sentiment Analysis In Data-Driven Marketing Analytic ",
     authors: ["Dr. Shrabani Mallick1, Mrs. Parul Awasthi2, Dr. Anil Kumar Yadav3, Bhagya Sri G4, Dr.Rabins Porwal5*, Nidhi Bhatia6and Jyoti Kataria7 "],
     free: true,
     abstract:
       `The aim of the study, the world of data-driven marketing has evolved to the point at which the correct measurement
-of the societal mood at all levels of social media is imperative to shaping a responsive and personalized approach. This
-paper presents a deep hybrid architecture that leverages Convolutional Neural Networks (CNNs) and Long ShortTerm
-Memory (LSTM) networks to overcome the limitations that the sentiment analysis has in the social media due to noise
-and unstructure data.`,
+      of the societal mood at all levels of social media is imperative to shaping a responsive and personalized approach. This
+      paper presents a deep hybrid architecture that leverages Convolutional Neural Networks (CNNs) and Long ShortTerm
+      Memory (LSTM) networks to overcome the limitations that the sentiment analysis has in the social media due to noise
+      and unstructure data.`,
     links: [
       { label: "Abstract" },
       { label: "View article", url: "/information_ethics" },
@@ -68,7 +68,7 @@ and unstructure data.`,
   },
   {
     type: "RESEARCH ARTICLE",
-    date: "August 11 2025",
+    date: "October 08 2025",
     url: "/Author/5.pdf",
     title:
       "Environmental Assessment of Solar PV Systems Using Life Cycle Analysis ",
@@ -92,7 +92,7 @@ and unstructure data.`,
 
 export default function AdvancePublication() {
   const [openAbstract, setOpenAbstract] = useState(null);
-
+  const nav=useNavigate();
   return (
     <>
       <Navbar />
