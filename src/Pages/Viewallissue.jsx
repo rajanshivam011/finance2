@@ -58,6 +58,44 @@ const issueData = {
         },
       ],
     },
+    {
+      label: "BOOKS",
+      articles: [
+        {
+          title: "Role Of Women In Financial Management And Decision Making In Small And Medium Enterprises (Smes)",
+          url: "/Vol_1/7.pdf",
+          authors: ["Anvita Dixit1, Akhand Pratap Singh2, Dr. Najmus Sehar3"],
+          free: true,
+          abstract: `This research explores the role of women in financial management and decision-making within
+          Small and Medium Enterprises (SMEs), highlighting the significant but underutilized potential of
+          female leadership in enhancing organizational performance and financial strategies`,
+          links: [
+            { label: "Extract" },
+            { label: "View article", url: "#" },
+            { label: "PDF", url: "/Vol_1/7.pdf" },
+          ],
+        },
+      ],
+    },
+    {
+      label: "BOOKS",
+      articles: [
+        {
+          title: "An Empirical Study on the Impact of Social Media Marketing on ConsumerBehaviour in the Cosmetic Industry, with Special Reference to Influencer Marketing",
+          url: "/Vol_2/7.pdf",
+          authors: ["Dr. Amit Aggarwal2"],
+          free: true,
+          abstract: `The advent of social media platforms has transformed marketing especially in the cosmetic industry where visual content
+            and consumer interaction are crucial. This paper empirically examines the influence of social media marketing with
+            reference to influencer marketing, on consumer behaviour in the context of the Indian cosmetics industry.`,
+          links: [
+            { label: "Extract" },
+            { label: "View article", url: "#" },
+            { label: "PDF", url: "/Vol_2/7.pdf" },
+          ],
+        },
+      ],
+    },
   ],
   issue2: [
     {
@@ -116,6 +154,31 @@ const issueData = {
           links: [
             { label: "Abstract" },
             { label: "PDF", url: "/issue2/5.pdf" },
+          ],
+        },
+        {
+          title: "Corporate Social ResponsibilityAnd Its Role InAchieving Sdg 2030 In India: ASectoralAnalysis",
+          url: "/issue2/6.pdf",
+          authors: ["Dr. Ritvik Dubey1, Upendra Saxena2, Ekta Rao3, Dr. Mahesh Kumar Sharma4"],
+          free: true,
+          abstract: `This paper examines how Corporate Social Responsibility (CSR) in India contributes to the United
+            Nations Sustainable Development Goals (SDGs) 2030, with a sectoral lens on large listed
+            companies and major public sector enterprises`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue2/6.pdf" },
+          ],
+        },
+        {
+          title: "Seasonal Variation In Food Inflation:AStudy OfAgricultural Commodities In India",
+          url: "/issue2/7.pdf",
+          authors: ["Diwakar1, Dr. Prashant Kumar2"],
+          free: true,
+          abstract: `This research paper examines the seasonal variation in food inflation in India and its implications
+          for agricultural commodities`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue2/7.pdf" },
           ],
         },
       ],
@@ -180,6 +243,31 @@ const issueData = {
             { label: "PDF", url: "/issue3/5.pdf" },
           ],
         },
+        {
+          title: "The Future Of Machine LearningAnd Artificial Intelligence: Key Trends And InnovativeApplications",
+          url: "/issue3/6.pdf",
+          authors: ["Sunil Kumar Sahu1, Abhay Kumar2, Arjit Singh3, Pramveer Kumar4"],
+          free: true,
+          abstract: `This paper examines near-term trajectories in machine learning and artificial intelligence (2025–
+          2030), synthesizing advances in multimodal foundation models, on-device small models, agentic
+          tool use, synthetic data, and specialized hardware with evolving governance frameworks`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue3/6.pdf" },
+          ],
+        },
+        {
+          title: "The Impact of Social Media Engagement on Brand Loyalty:AStrategic Approach for Marketing Management in the DigitalAge",
+          url: "/issue3/7.pdf",
+          authors: ["Dr. Podilapu Hanumantha Rao1, Dr. Sanjay J. Bhayani2, Rama Devi Seshapu3"],
+          free: true,
+          abstract: `In this study, the attention is largely on the consequence of social media in the current marketing
+            systems with emphasis on the aspects of consumer behavior and brand loyalty in the DelhiNCR region.`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue3/7.pdf" },
+          ],
+        },
       ],
     },
   ],
@@ -240,6 +328,31 @@ const issueData = {
           links: [
             { label: "Abstract" },
             { label: "PDF", url: "/issue4/5.pdf" },
+          ],
+        },
+        {
+          title: "Modern Management Influencing Sustainable Organization Development & Strategic Management",
+          url: "/issue4/6.pdf",
+          authors: ["Nikhilesh Nawani1, Dr. Sana Zaidi2, Dr. Pallavi Bhardwaj3, Dr. Devkanya Gupta4"],
+          free: true,
+          abstract: `In the contemporary business environment, modern management practices are central to achieving
+          sustainable organizational development and strengthening strategic management`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue4/6.pdf" },
+          ],
+        },
+        {
+          title: "Present Scenario of Financial Literacy among Women Vendors in Manipur",
+          url: "/issue4/7.pdf",
+          authors: ["JPratima Sharma1, Prof. N. Jayanti2"],
+          free: true,
+          abstract: `Manipur, a North-Eastern state of India, is renowned for its distinctsocio-cultural fabric and
+          thriving female-led market economy. Women in Manipur have a big impact on the politics,
+          society, and economy of the state.`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue4/7.pdf" },
           ],
         },
       ],
@@ -304,6 +417,32 @@ const issueData = {
             { label: "PDF", url: "/issue5/5.pdf" },
           ],
         },
+        {
+          title: "Asymmetric Effect of New York Stock Exchange (NYSE) & London Stock Exchange (LSE): Empirical Evidence",
+          url: "/issue5/6.pdf",
+          authors: ["Dr. Manish Kumar1, Manisha2, Simranjit Singh3, Anisha4, Akanksha Sharma5"],
+          free: true,
+          abstract: `The study examines the various asymmetric effects of the New York Stock Exchange (NYSE)
+            and the London Stock Exchange (LSE) over a period from April 1, 2014 to March 31, 2024 by
+            considering daily time series data`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue5/6.pdf" },
+          ],
+        },
+        {
+          title: "Psychological FactorsAffecting Investment Decisions in Working Women",
+          url: "/issue5/7.pdf",
+          authors: ["Prof. R. Ganesh Kumar1, Dr. KRA Balaji1, Dr. Prathima Bhat K.2*, Dr.A. Satya Nandini2, Mr.Sreevatsa K.S. Jois"],
+          free: true,
+          abstract: `This study is an inquiry into the psychological factors that influence investment decisions with
+          working women, among whom more and more appear to be attaining economic independence
+          and control over individual finances`,
+          links: [
+            { label: "Abstract" },
+            { label: "PDF", url: "/issue5/7.pdf" },
+          ],
+        },
       ],
     },
   ],
@@ -344,19 +483,19 @@ export default function Viewallissue() {
           <main className="flex-1">
             <div className="bg-white rounded-xl shadow-lg p-6">
               <button
-                className="mb-4 px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-all"
+                className="cursor-pointer mb-4 px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-all"
                 onClick={() => setShowPopup(true)}
               >
                 Show All Issues
               </button>
               {showPopup && (
-                <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-20">
+                <div className="cursor-pointer fixed inset-0 bg-opacity-50 flex items-center justify-center z-20">
                   <div className="bg-white rounded-lg p-6 w-80">
-                    <h2 className="text-lg font-bold text-teal-700 mb-4">Select an Issue</h2>
+                    <h2 className="cursor-pointer text-lg font-bold text-teal-700 mb-4">Select an Issue</h2>
                     {Object.keys(issueLabels).map((issueLabel) => (
                       <button
                         key={issueLabel}
-                        className={`w-full text-left px-4 py-2 mb-2 rounded-lg ${
+                        className={` cursor-pointer w-full text-left px-4 py-2 mb-2 rounded-lg ${
                           selectedIssue === issueLabels[issueLabel]
                             ? "bg-teal-100 text-teal-700"
                             : "bg-teal-50 text-teal-600"

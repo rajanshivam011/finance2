@@ -133,6 +133,33 @@ const MainContent = () => {
                 Log Permeability And Injection Log Tool Comparison, Upper Shale Member Of Zubair Formation In X-Field As Case Study 
               </Link>
             </li>
+            <li>
+              <Link 
+                to="/Vol_1/6.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Impact Of Emerging Farming Practices On Antioxidant Activity In Commonly Eaten Leafy Vegetables 
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_1/7.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Role Of Women In Financial Management And Decision Making In Small And Medium Enterprises (Smes) 
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_1/8.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Achieving Sustainable Development Goal 2030 In India: Challenges,Strategies, And Global Implications 
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -185,6 +212,33 @@ const MainContent = () => {
                 "Evaluting Physiological Adaptations and Yied Performances of Fave Leguminous Cover Crops in Semi Arid Condition of Algeria
               </Link>
             </li>
+            <li>
+              <Link 
+                to="/Vol_2/6.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Precision Medicine: Advancements, Applications, and Future Directions - Perspectives from India
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_2/7.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                An Empirical Study on the Impact of Social Media Marketing on Consumer Behaviour in the Cosmetic Industry, with Special Reference to Influencer Marketing
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_2/8.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                The Role OfArtificial Intelligence In Higher EducationAnd Research
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -235,6 +289,33 @@ const MainContent = () => {
                 className="hover:border-b-2 border-amber-500 transition-all"
               >
                 Justice Deferred? Transgender Protections And The Bharatiya Nyaya Sanhita 
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_3/6.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Towards Sustainable Taxation: Bridging Fiscal Inequity And Environmental Responsibility In Indian Agriculture
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_3/7.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Early Indicators Of Alterations In Hematological And Inflammatory Biomarkers Among Smoking And Smokeless Tobacco Users - Comparative Analysis
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/Vol_3/8.pdf" 
+                target="_blank"
+                className="hover:border-b-2 border-amber-500 transition-all"
+              >
+                Green TechnologiesAnd Their Impact On Global TradeAnd Investment
               </Link>
             </li>
           </ul>

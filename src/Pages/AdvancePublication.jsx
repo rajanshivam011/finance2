@@ -88,6 +88,71 @@ the country’s supermarket popularity`,
       { label: "Supplementary data", url: "/Author/5.pdf" },
     ],
   },
+  {
+    type: "RESEARCH ARTICLE",
+    date: "October 08 2025",
+    url: "/Author/6.pdf",
+    title: "Bridging Accuracy AND Transparency: Explainable Ai IN Healthcare -A Review",
+    authors: ["Anindita Chakraborty1*, Suvojit Mukhopadhyay2,Piyali De3, Sreelekha Paul4, Sayak Banerjee5,NirmallyaRoy6"],
+    free: true,
+    abstract:`The application of artificial intelligence (AI) in healthcare has demonstrated revolutionary potential in the areas of patient
+    outcome prediction, treatment planning, and diagnosis. `,
+    links: [{ label: "Abstract" }, { label: "View article", url: "/Author/6.pdf" }],
+  },
+  {
+    type: "RESEARCH ARTICLE",
+    date: "October 08 2025",
+    url: "/Author/7.pdf",
+    title: "Sustainable Finance And Its Economic Impact: Evidence From India Green Bond Market",
+    authors: ["Dr. Prashant Kumarl, Dr. M. Zaheer Ahmed2, Dr. Alok Kumai"],
+    free: true,
+    abstract:`This study investigates the relationship between green bonds and economic growth in India using
+    econometric methods over the period 2000-2023.`,
+    links: [{ label: "Abstract" }, { label: "View article", url: "/Author/7.pdf" }],
+  },
+  {
+    type: "RESEARCH ARTICLE",
+    date: "October 08 2025",
+    url: "/Author/8.pdf",
+    title: "MentorshipAs ATool To Drive Employee PerformanceAt The Workplace Within The PharmaceuticalAnd Healthcare Sector",
+    authors: ["Shailendra Nath Tripathi1, Dr. Mohani Shankar2"],
+    free: true,
+    abstract:`This study critically examines the effects of mentorship programs on job performance within
+    the pharmaceutical and healthcare sectors industries characterized by high employee turnover
+    and the need for skill-intensive labor.`,
+    links: [{ label: "Abstract" }, { label: "View article", url: "/Author/8.pdf" }],
+  },
+  {
+    type: "RESEARCH ARTICLE",
+    date: "October 08 2025",
+    url: "/Author/9.pdf",
+    title: "Evaluating Human ResourceAccounting In Relation To Employee Compensation And Performance In Private Hospitals Of Manipur",
+    authors: ["Maibam Angkita Devi1, Prof. Ningombam Jayanti2"],
+    free: true,
+    abstract:`This investigationevaluates complex links between Human Resource Accounting (HRA)
+    processes, employee compensation, and performance in Manipur's private hospitals.`,
+    links: [{ label: "Abstract" }, { label: "View article", url: "/Author/9.pdf" }],
+  },
+  {
+    type: "RESEARCH ARTICLE",
+    date: "October 08 2025",
+    url: "/Author/10.pdf",
+    title: "",
+    authors: [""],
+    free: true,
+    abstract:``,
+    links: [{ label: "Abstract" }, { label: "View article", url: "/Author/10.pdf" }],
+  },
+  {
+    type: "RESEARCH ARTICLE",
+    date: "October 08 2025",
+    url: "/Author/11.pdf",
+    title: "",
+    authors: [""],
+    free: true,
+    abstract:``,
+    links: [{ label: "Abstract" }, { label: "View article", url: "/Author/11.pdf" }],
+  },
 ];
 
 export default function AdvancePublication() {
