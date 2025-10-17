@@ -64,8 +64,8 @@ const Footer = () => {
               <Link to="/advertising" className="block hover:underline">Advertisers</Link>
               <Link to="/bookauthor" className="block hover:underline">Book Authors</Link>
               <Link to="/content" className="block hover:underline">Booksellers/Media</Link>
-              <Link to="/content" className="block hover:underline">Customers</Link>
-              <Link to="/content" className="block hover:underline">Educators</Link>
+              {/* <Link to="/content" className="block hover:underline">Customers</Link>
+              <Link to="/content" className="block hover:underline">Educators</Link> */}
               <Link to="/bookauthor" className="block hover:underline">Journal Authors/Editors</Link>
               <Link to="/library" className="block hover:underline">Librarians</Link>
               <Link to="/pj" className="block hover:underline">Prospective Journals</Link>

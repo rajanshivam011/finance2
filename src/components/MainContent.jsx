@@ -335,7 +335,7 @@ const MainContent = () => {
             Follow <span className="italic text-teal-700">Journal Policy Review</span> on social media for the latest policy insights and updates.
           </p>
           <Link 
-            to="/connect" 
+            to="#" 
             className="text-teal-600 hover:border-b-2 border-amber-500 font-semibold transition-all text-base sm:text-lg"
           >
             Connect with Jounal Policy Review on Bluesky.
@@ -358,12 +358,7 @@ const MainContent = () => {
               <h3 className="font-bold text-2xl mb-3 text-teal-700">Stay Updated</h3>
               <p className="text-base sm:text-lg text-gray-700">
                 Sign up for <span className="italic">Journal Health Policy Review</span>{" "}
-                <a 
-                  href="/alerts" 
-                  className="text-teal-600 hover:border-b-2 border-amber-500 font-semibold transition-all"
-                >
                   email alerts
-                </a>{" "}
                 to receive updates on new issues and articles.
               </p>
             </div>
@@ -408,12 +403,7 @@ const MainContent = () => {
               <h3 className="font-bold text-2xl mb-3 text-teal-700">Subscribe</h3>
               <p className="text-base sm:text-lg text-gray-700">
                 Access <span className="italic">Journal Health Policy Review</span>{" "}
-                <a 
-                  href="/subscribe" 
-                  className="text-teal-600 hover:border-b-2 border-amber-500 font-semibold transition-all"
-                >
                   subscription details
-                </a>{" "}
                 for full journal access.
               </p>
             </div>

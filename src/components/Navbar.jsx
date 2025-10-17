@@ -62,12 +62,12 @@ const SidebarMenu = ({ open, onClose }) => {
               <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/book')}>
                 Journals
               </div>
-              <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/advance_search')}>
+              {/* <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/advance_search')}>
                 Browse by Title
-              </div>
-              <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/advance_search')}>
+              </div> */}
+              {/* <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/advance_search')}>
                 Browse by Subject
-              </div>
+              </div> */}
               <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/readinglist')}>
                 Reading Lists
               </div>
@@ -101,12 +101,12 @@ const SidebarMenu = ({ open, onClose }) => {
               <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/content')}>
                 Booksellers/Media
               </div>
-              <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/content')}>
+              {/* <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/content')}>
                 Customers
               </div>
               <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/content')}>
                 Educators
-              </div>
+              </div> */}
               <div className="cursor-pointer hover:border-b-2 border-amber-500 py-1 transition-all text-sm" onClick={() => nav('/bookauthor')}>
                 Journal Authors/Editors
               </div>
@@ -319,7 +319,7 @@ const Navbar = () => {
               <div className="cursor-pointer hover:bg-gray-50 rounded py-2 text-sm" onClick={() => nav("/submission_guide")}>
                 Submission Guidelines
               </div>
-              <div className="cursor-pointer hover:bg-gray-50 rounded py-2 text-sm">
+              <div className="cursor-pointer hover:bg-gray-50 rounded py-2 text-sm" onClick={()=>nav("/register")}>
                 Submit Article
               </div>
               <div className="cursor-pointer hover:bg-gray-50 rounded py-2 text-sm" onClick={() => nav("/ethics")}>
