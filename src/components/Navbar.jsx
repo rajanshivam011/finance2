@@ -329,9 +329,9 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link to="/alerts" className="hover:border-b-2 border-amber-500 text-sm font-semibold transition-all py-1">
+        {/* <Link to="/alerts" className="hover:border-b-2 border-amber-500 text-sm font-semibold transition-all py-1">
           ALERTS
-        </Link>
+        </Link> */}
 
         {/* ABOUT */}
         <div className="relative" onClick={() => setAboutcontent(!aboutcontent)}>
@@ -386,9 +386,9 @@ const Navbar = () => {
             </div>
           </details>
 
-          <Link to="/alerts" className="block hover:border-b-2 border-amber-500 py-2 transition-all">
+          {/* <Link to="/alerts" className="block hover:border-b-2 border-amber-500 py-2 transition-all">
             ALERTS
-          </Link>
+          </Link> */}
 
           <details className="group">
             <summary className="cursor-pointer hover:border-b-2 border-amber-500 py-2 transition-all">ABOUT</summary>

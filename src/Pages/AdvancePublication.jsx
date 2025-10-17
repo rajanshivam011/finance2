@@ -186,11 +186,11 @@ export default function AdvancePublication() {
                 >
                   {a.title}
                 </Link>
-                {a.free && (
+                {/* {a.free && (
                   <span className="ml-2 px-2 py-0.5 bg-teal-100 text-teal-700 text-xs rounded font-bold">
                     FREE
                   </span>
-                )}
+                )} */}
               </div>
 
               <div className="text-teal-600 text-sm mb-2">
