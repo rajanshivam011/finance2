@@ -30,11 +30,11 @@ const Submission_GuideLlnes = () => {
           </ul>
 
           {/* Documentation Section */}
-          <h2 className="text-lg font-bold mb-2 text-gray-900">Documentation</h2>
+          {/* <h2 className="text-lg font-bold mb-2 text-gray-900">Documentation</h2>
           <p className="mb-4 text-gray-900">
             <span className="italic">JHPPL</span> follows <span className="italic">The Chicago Manual of Style</span>'s author-date style for in-text citations and references with some key exceptions. Before formatting your references, please consult the examples below as well as the <a href="#" className="text-blue-700 underline">JHPPL style sheet</a>, which includes Duke University Press journals’ documentation requirements and <span className="italic">JHPPL</span>’s exceptions.
           </p>
-          <div className="mb-2 italic text-gray-900">Examples</div>
+          <div className="mb-2 italic text-gray-900">Examples</div> */}
           <div className="mb-2">
             <a href="#" className="underline text-gray-900">In-Text Citation</a>
           </div>
