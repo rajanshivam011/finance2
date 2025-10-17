@@ -527,11 +527,11 @@ export default function Viewallissue() {
                         className="text-xl font-semibold text-teal-700 hover:border-b-2 border-amber-500 transition-all"
                       >
                         {a.title}
-                        {a.free && (
+                        {/* {a.free && (
                           <span className="ml-2 px-2 py-0.5 bg-teal-100 text-teal-700 text-xs rounded font-bold">
                             FREE
                           </span>
-                        )}
+                        )} */}
                       </Link>
                       <div className="mt-1 text-sm text-teal-600">
                         {a.authors.map((author, i) => (
